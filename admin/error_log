@@ -1,0 +1,597 @@
+[21-Sep-2018 18:52:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ofieldwe/public_html/demo/atk/cek.php:10) in /home/ofieldwe/public_html/demo/atk/cek.php on line 14
+[21-Sep-2018 19:23:36 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:23:36 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:23:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 145
+[21-Sep-2018 19:23:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 193
+[21-Sep-2018 19:25:37 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:25:37 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:25:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 145
+[21-Sep-2018 19:25:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 193
+[21-Sep-2018 19:27:41 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:27:41 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:27:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:27:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:28:47 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:47 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:28:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:28:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:28:59 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:59 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:28:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:28:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:29:53 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:29:53 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:29:53 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:29:53 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:30:02 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:30:02 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:30:02 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:30:02 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:30:17 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:30:17 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:30:17 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:30:17 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:30:32 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:30:32 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:30:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:30:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:32:11 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:32:11 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:32:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:32:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:32:14 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:32:14 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:32:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:32:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:33:08 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:33:08 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:33:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 144
+[21-Sep-2018 19:33:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/admin.php on line 189
+[21-Sep-2018 19:33:49 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:33:49 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:39:39 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:39:39 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:47:22 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:47:22 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:48:32 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:48:32 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:49:16 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:49:16 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:25 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:25 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:45 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:45 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:50 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:50 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:55 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:55:55 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:56:00 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:56:00 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:56:06 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:56:06 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:56:38 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[21-Sep-2018 19:56:38 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[22-Sep-2018 00:57:35 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[22-Sep-2018 00:57:35 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[22-Sep-2018 01:48:42 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[22-Sep-2018 01:48:42 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[22-Sep-2018 01:48:53 UTC] PHP Warning:  include(/home/ofieldwe/public_html/demo/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[22-Sep-2018 01:48:53 UTC] PHP Warning:  include(): Failed opening '/home/ofieldwe/public_html/demo/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 3
+[15-Oct-2018 23:54:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[15-Oct-2018 23:54:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[15-Oct-2018 23:54:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[15-Oct-2018 23:54:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:03:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:03:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:03:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:03:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:04:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:04:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:04:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:04:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:04:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:04:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:04:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:04:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:04:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:04:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:04:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:04:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:04:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:04:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:04:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:04:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:05:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:05:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:05:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:05:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:07:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:07:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:07:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:07:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:07:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:07:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:07:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:07:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:08:12 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:08:12 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:08:12 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:08:12 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:08:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:08:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:08:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:08:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:09:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:09:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:09:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:09:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:10:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:10:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:10:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:10:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:11:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:11:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:11:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:11:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:14:49 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:14:49 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:14:49 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:14:52 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:14:52 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:14:52 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:15:03 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:15:03 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:15:03 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:15:13 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:15:13 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:15:13 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:16:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:16:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:16:25 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:16:44 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:16:44 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:16:44 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:23 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:23 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:23 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:25 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:26 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:26 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:27 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:27 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:27 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:28 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:28 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:17:28 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:18:21 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:18:21 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:18:21 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:18:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:18:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:18:24 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:21 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:21 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:21 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:23 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:23 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:23 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:23 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:23 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:23 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:24 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:25 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:25 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:25 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:26 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:35 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:35 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:35 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:40 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:40 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:19:40 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 03:23:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:23:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:23:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:23:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:24:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:24:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:24:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:24:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:25:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:25:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:25:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:25:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:27:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:27:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:27:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:27:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:27:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:27:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:27:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:27:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:27:33 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:27:33 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:27:33 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:27:33 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:27:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:27:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:27:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:27:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:27:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:27:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:27:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:27:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:27:57 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:27:57 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:27:57 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:27:57 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:28:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:28:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:28:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:28:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:28:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:28:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:28:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:28:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:29:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:29:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:29:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:29:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:29:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:29:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:29:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:29:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:29:25 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:29:25 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:29:25 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:29:25 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:30:28 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:30:28 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:30:28 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:30:28 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:30:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:30:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:30:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:30:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:30:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:30:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:30:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:30:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:30:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:30:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:30:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:30:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:32:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:32:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:32:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:32:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:35:13 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:35:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:35:46 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:35:47 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:36:02 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:37:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:37:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:37:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:37:17 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:18 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:19 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 99
+[16-Oct-2018 03:37:40 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:42 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:42 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:42 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:43 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:43 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:43 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:43 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:44 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:44 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:44 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:37:44 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:45:08 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:45:09 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:45:40 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ofieldwe/public_html/demo/atk/index_p.php on line 97
+[16-Oct-2018 03:45:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:45:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:45:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:45:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:47:00 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ofieldwe/public_html/demo/atk/index_p.php on line 103
+[16-Oct-2018 03:48:48 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ofieldwe/public_html/demo/atk/index_p.php on line 103
+[16-Oct-2018 03:48:50 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ofieldwe/public_html/demo/atk/index_p.php on line 103
+[16-Oct-2018 03:48:54 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:48:54 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:48:54 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:48:54 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:48:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:48:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:48:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:48:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:53:02 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ofieldwe/public_html/demo/atk/index_p.php on line 103
+[16-Oct-2018 03:53:06 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ofieldwe/public_html/demo/atk/index_p.php on line 103
+[16-Oct-2018 03:54:43 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ofieldwe/public_html/demo/atk/tes.php on line 9
+[16-Oct-2018 03:55:35 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:55:35 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:55:35 UTC] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:55:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 03:55:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 03:55:35 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 03:55:35 UTC] PHP Fatal error:  Call to undefined function rupiah() in /home/ofieldwe/public_html/demo/atk/tes.php on line 16
+[16-Oct-2018 03:55:37 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:55:37 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:55:37 UTC] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:55:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 03:55:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 03:55:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 03:55:37 UTC] PHP Fatal error:  Call to undefined function rupiah() in /home/ofieldwe/public_html/demo/atk/tes.php on line 16
+[16-Oct-2018 03:56:24 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:56:24 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:56:24 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:56:24 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 03:57:10 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:57:10 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:57:10 UTC] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:57:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 03:57:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 03:57:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 03:57:10 UTC] PHP Fatal error:  Call to undefined function rupiah() in /home/ofieldwe/public_html/demo/atk/tes.php on line 16
+[16-Oct-2018 03:58:29 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:58:29 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:58:29 UTC] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 03:58:29 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 03:58:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 03:58:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 03:58:29 UTC] PHP Fatal error:  Call to undefined function rupiah() in /home/ofieldwe/public_html/demo/atk/tes.php on line 16
+[16-Oct-2018 03:59:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 03:59:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 03:59:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 03:59:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 04:00:00 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:00:00 UTC] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:00:00 UTC] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:00:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:00:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 04:00:00 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 04:00:00 UTC] PHP Fatal error:  Call to undefined function rupiah() in /home/ofieldwe/public_html/demo/atk/tes.php on line 16
+[16-Oct-2018 04:00:29 UTC] PHP Warning:  include(/atk/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:00:29 UTC] PHP Warning:  include(): Failed opening '/atk/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:00:29 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:00:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 04:00:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 04:00:29 UTC] PHP Fatal error:  Call to undefined function rupiah() in /home/ofieldwe/public_html/demo/atk/tes.php on line 16
+[16-Oct-2018 04:00:32 UTC] PHP Warning:  include(/atk/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:00:32 UTC] PHP Warning:  include(): Failed opening '/atk/init/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:00:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:00:32 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 04:00:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 04:00:32 UTC] PHP Fatal error:  Call to undefined function rupiah() in /home/ofieldwe/public_html/demo/atk/tes.php on line 16
+[16-Oct-2018 04:01:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:01:32 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 6
+[16-Oct-2018 04:01:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/atk/tes.php on line 8
+[16-Oct-2018 04:03:12 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:07:23 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:07:28 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:11:16 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/ofieldwe/public_html/demo/atk/tes.php on line 5
+[16-Oct-2018 04:11:50 UTC] PHP Warning:  include(/atk/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:11:50 UTC] PHP Warning:  include(/atk/init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:11:50 UTC] PHP Warning:  include(): Failed opening '/atk/init/db.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 2
+[16-Oct-2018 04:11:50 UTC] PHP Warning:  require(/atk/function.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 3
+[16-Oct-2018 04:11:50 UTC] PHP Warning:  require(/atk/function.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 3
+[16-Oct-2018 04:11:50 UTC] PHP Fatal error:  require(): Failed opening required '/atk/function.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 3
+[16-Oct-2018 04:12:12 UTC] PHP Warning:  require(function.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 3
+[16-Oct-2018 04:12:12 UTC] PHP Warning:  require(function.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/tes.php on line 3
+[16-Oct-2018 04:12:12 UTC] PHP Fatal error:  require(): Failed opening required 'function.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/tes.php on line 3
+[16-Oct-2018 04:13:42 UTC] PHP Warning:  require(/atk/function.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 04:13:42 UTC] PHP Warning:  require(/atk/function.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 04:13:42 UTC] PHP Fatal error:  require(): Failed opening required '/atk/function.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 04:14:22 UTC] PHP Warning:  require(/atk/functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 04:14:22 UTC] PHP Warning:  require(/atk/functions.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 04:14:22 UTC] PHP Fatal error:  require(): Failed opening required '/atk/functions.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/atk/index_p.php on line 5
+[16-Oct-2018 04:18:09 UTC] PHP Notice:  Undefined index: jumlah in /home/ofieldwe/public_html/demo/atk/index_p.php on line 103
+[16-Oct-2018 04:18:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 04:18:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 04:18:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 04:18:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 04:19:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 04:19:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 04:19:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 04:19:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 04:19:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 04:19:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 04:19:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 04:19:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 04:26:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 04:26:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 04:26:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 04:26:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 04:30:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 04:30:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 04:30:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 04:30:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 04:31:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 57
+[16-Oct-2018 04:31:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 81
+[16-Oct-2018 04:31:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 104
+[16-Oct-2018 04:31:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 145
+[16-Oct-2018 04:33:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index_p.php on line 145
+[16-Oct-2018 04:35:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 58
+[16-Oct-2018 04:35:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 82
+[16-Oct-2018 04:35:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 105
+[16-Oct-2018 04:35:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 146
+[16-Oct-2018 04:36:46 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 04:36:46 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar_p.php on line 3
+[16-Oct-2018 04:36:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index_p.php on line 145
+[16-Oct-2018 04:45:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 58
+[16-Oct-2018 04:45:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 82
+[16-Oct-2018 04:45:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 105
+[16-Oct-2018 04:45:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 146
+[16-Oct-2018 04:46:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 82
+[16-Oct-2018 04:46:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 105
+[16-Oct-2018 04:46:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 146
+[16-Oct-2018 04:47:44 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 153
+[16-Oct-2018 04:48:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 153
+[16-Oct-2018 04:49:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 153
+[16-Oct-2018 04:56:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 153
+[16-Oct-2018 04:57:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/atk/index.php on line 153
+[16-Oct-2018 05:41:55 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index.php on line 18
+[16-Oct-2018 05:41:55 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 5
+[16-Oct-2018 05:43:14 UTC] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/ofieldwe/public_html/demo/atk/index.php on line 159
+[16-Oct-2018 05:43:14 UTC] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/ofieldwe/public_html/demo/atk/index.php on line 159
+[16-Oct-2018 05:43:14 UTC] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/ofieldwe/public_html/demo/atk/index.php on line 159
+[16-Oct-2018 06:23:16 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 06:23:16 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar_p.php on line 3
+[16-Oct-2018 06:23:21 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 06:23:21 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar_p.php on line 3
+[16-Oct-2018 06:23:30 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 06:23:34 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index.php on line 18
+[16-Oct-2018 06:23:39 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index.php on line 18
+[16-Oct-2018 06:23:55 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index.php on line 18
+[16-Oct-2018 06:23:58 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 06:24:58 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 06:26:46 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 06:27:28 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 06:39:56 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index.php on line 18
+[16-Oct-2018 06:39:56 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 6
+[16-Oct-2018 07:51:28 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index_p.php on line 14
+[16-Oct-2018 07:51:28 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar_p.php on line 3
+[16-Oct-2018 08:55:51 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index.php on line 18
+[16-Oct-2018 08:55:51 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 6
+[28-Oct-2018 14:50:37 UTC] PHP Notice:  Undefined index: level in /home/ofieldwe/public_html/demo/atk/index.php on line 15
+[28-Oct-2018 14:50:37 UTC] PHP Notice:  Undefined index: username in /home/ofieldwe/public_html/demo/atk/sidebar.php on line 6
+[07-Jan-2019 09:03:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/index.php on line 55
+[07-Jan-2019 09:03:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/index.php on line 76
+[07-Jan-2019 09:03:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/index.php on line 78
+[07-Jan-2019 09:03:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/index.php on line 104
+[07-Jan-2019 09:03:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/index.php on line 139
+[07-Jan-2019 09:03:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/index.php on line 184
+[13-Jan-2019 12:21:10 UTC] PHP Parse error:  syntax error, unexpected ''",'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ofieldwe/public_html/demo/tb/index.php on line 261
+[13-Jan-2019 12:59:08 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ofieldwe/public_html/demo/tb/index.php on line 271
+[13-Jan-2019 13:00:02 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ofieldwe/public_html/demo/tb/index.php on line 271
+[13-Jan-2019 13:00:06 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ofieldwe/public_html/demo/tb/index.php on line 271
+[13-Jan-2019 13:04:53 UTC] PHP Notice:  Use of undefined constant Total_1 - assumed 'Total_1' in /home/ofieldwe/public_html/demo/tb/index.php on line 274
+[13-Jan-2019 13:04:53 UTC] PHP Notice:  Use of undefined constant Total_1 - assumed 'Total_1' in /home/ofieldwe/public_html/demo/tb/index.php on line 274
+[13-Jan-2019 13:06:31 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ofieldwe/public_html/demo/tb/index.php on line 274
+[13-Jan-2019 13:21:48 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/ofieldwe/public_html/demo/tb/teschart.php on line 51
+[13-Jan-2019 13:22:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_num_rows() in /home/ofieldwe/public_html/demo/tb/teschart.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/ofieldwe/public_html/demo/tb/teschart.php on line 49
+[13-Jan-2019 13:22:48 UTC] PHP Notice:  Use of undefined constant Total_1 - assumed 'Total_1' in /home/ofieldwe/public_html/demo/tb/teschart.php on line 56
+[13-Jan-2019 13:22:48 UTC] PHP Notice:  Use of undefined constant Total_1 - assumed 'Total_1' in /home/ofieldwe/public_html/demo/tb/teschart.php on line 54
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 115
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 115
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 116
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 118
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 118
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 119
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 121
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 121
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 124
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 41
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 41
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 42
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 44
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 44
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 45
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 47
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 47
+[23-Jan-2019 02:20:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 50
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 115
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 115
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 116
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 118
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 118
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 119
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 121
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 121
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 124
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  Missing argument 3 for total_tahunan(), called in /home/ofieldwe/public_html/demo/tb/index.php on line 113 and defined in /home/ofieldwe/public_html/demo/tb/functions.php on line 38
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Notice:  Undefined variable: path in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 41
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 41
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 42
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 44
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 44
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 45
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 47
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 47
+[23-Jan-2019 02:23:54 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 50
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  include(../init/db.php): failed to open stream: No such file or directory in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  include(): Failed opening '../init/db.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 115
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 115
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 116
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 118
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 118
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 119
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 121
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 121
+[23-Jan-2019 02:24:40 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 124
+[22-Jan-2019 19:36:45 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/ofieldwe/public_html/demo/tb/index.php on line 319
+[23-Jan-2019 02:54:51 Asia/Jakarta] PHP Notice:  Undefined index: Bulan in /home/ofieldwe/public_html/demo/tb/index.php on line 319
+[23-Jan-2019 02:55:19 Asia/Jakarta] PHP Notice:  Undefined index: Bulan in /home/ofieldwe/public_html/demo/tb/index.php on line 319
+[23-Jan-2019 02:56:30 Asia/Jakarta] PHP Notice:  Undefined index: Bulan in /home/ofieldwe/public_html/demo/tb/index.php on line 319

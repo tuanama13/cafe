@@ -1,0 +1,22 @@
+[19-Jan-2019 02:34:41 UTC] PHP Notice:  Use of undefined constant rows - assumed 'rows' in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 77
+[19-Jan-2019 02:34:41 UTC] PHP Warning:  Illegal string offset 'tgl_pengeluaran' in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 77
+[19-Jan-2019 02:40:06 UTC] PHP Notice:  Undefined variable: ket in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:40:06 UTC] PHP Notice:  Undefined variable: jumlah in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:40:06 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:40:06 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 29
+[19-Jan-2019 02:41:40 UTC] PHP Notice:  Undefined variable: ket in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:41:40 UTC] PHP Notice:  Undefined variable: jumlah in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:41:40 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:41:40 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 29
+[19-Jan-2019 02:41:49 UTC] PHP Notice:  Undefined variable: ket in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:41:49 UTC] PHP Notice:  Undefined variable: jumlah in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:41:49 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:41:49 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 29
+[19-Jan-2019 02:42:36 UTC] PHP Notice:  Undefined variable: ket in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:42:36 UTC] PHP Notice:  Undefined variable: jumlah in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:42:36 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:42:36 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 29
+[19-Jan-2019 02:45:07 UTC] PHP Notice:  Undefined variable: ket in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:45:07 UTC] PHP Notice:  Undefined variable: jumlah in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:45:07 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 23
+[19-Jan-2019 02:45:07 UTC] PHP Notice:  Undefined variable: id in /home/ofieldwe/public_html/demo/tb/pengeluaran/update_pengeluaran.php on line 31

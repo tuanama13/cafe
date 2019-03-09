@@ -1,0 +1,103 @@
+[17-Jan-2019 04:33:04 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 13
+[17-Jan-2019 04:33:04 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 14
+[21-Jan-2019 05:03:53 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 13
+[21-Jan-2019 05:03:53 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 14
+[21-Jan-2019 05:04:05 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 13
+[21-Jan-2019 05:04:05 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 14
+[21-Jan-2019 05:04:32 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 13
+[21-Jan-2019 05:04:32 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 14
+[21-Jan-2019 05:52:28 UTC] PHP Notice:  Undefined variable: con in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 60
+[21-Jan-2019 05:52:28 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 60
+[21-Jan-2019 05:52:56 UTC] PHP Notice:  Undefined variable: con in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 60
+[21-Jan-2019 05:52:56 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 60
+[21-Jan-2019 05:56:03 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 39
+[21-Jan-2019 05:56:35 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 39
+[21-Jan-2019 05:56:38 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 39
+[21-Jan-2019 05:56:41 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 39
+[21-Jan-2019 06:09:47 UTC] PHP Notice:  Undefined variable: id_t in /home/ofieldwe/public_html/demo/tb/retur/tes_retur.php on line 9
+[21-Jan-2019 06:09:47 UTC] PHP Notice:  Undefined variable: id_t in /home/ofieldwe/public_html/demo/tb/retur/tes_retur.php on line 22
+[21-Jan-2019 06:10:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/retur/tes_retur.php on line 10
+[21-Jan-2019 06:11:26 UTC] PHP Warning:  mysqli_fetch_assoc() expects exactly 1 parameter, 2 given in /home/ofieldwe/public_html/demo/tb/retur/tes_retur.php on line 10
+[21-Jan-2019 06:13:35 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/retur/tes_retur.php on line 10
+[21-Jan-2019 06:13:35 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/retur/tes_retur.php on line 10
+[21-Jan-2019 06:22:40 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 37
+[21-Jan-2019 06:23:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 37
+[21-Jan-2019 06:24:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 37
+[21-Jan-2019 06:46:20 UTC] PHP Notice:  Undefined variable: total_harga_beli in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 50
+[21-Jan-2019 06:47:58 UTC] PHP Notice:  Undefined variable: total_harga_beli in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 50
+[21-Jan-2019 07:53:19 UTC] PHP Notice:  Undefined index: harga in /home/ofieldwe/public_html/demo/tb/retur/edit_retur.php on line 32
+[21-Jan-2019 08:08:40 UTC] PHP Notice:  Undefined variable: row in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 68
+[21-Jan-2019 08:08:40 UTC] PHP Notice:  Undefined variable: row in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 68
+[21-Jan-2019 08:29:33 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 6
+[21-Jan-2019 08:29:33 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 7
+[21-Jan-2019 08:30:51 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 6
+[21-Jan-2019 08:30:51 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 7
+[21-Jan-2019 08:31:44 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 6
+[21-Jan-2019 08:31:44 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 7
+[27-Jan-2019 18:33:44 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ofieldwe/public_html/demo/tb/retur/retur_bagus.php on line 71
+[07-Feb-2019 07:26:32 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ofieldwe/public_html/demo/tb/retur/edit_retur.php on line 62
+[07-Feb-2019 07:27:30 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ofieldwe/public_html/demo/tb/retur/edit_retur.php on line 62
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: tgl_ in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 88
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: path in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 88
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 112
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 112
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 112
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 113
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 113
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 114
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 116
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 116
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 117
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 119
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 119
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 122
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: bulan_ in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 163
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: tahun_ in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 187
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: bulan_ in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 187
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: path in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 187
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 76
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 76
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 76
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 77
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 77
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 78
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 80
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 80
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 81
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 83
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 83
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 86
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: tahun_ in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 241
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: tahun_ in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 268
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: tahun_ in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 269
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: path in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 269
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Filename cannot be empty in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ofieldwe/public_html/demo/tb/functions.php on line 40
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 41
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 41
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 42
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 44
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 44
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 45
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: conn in /home/ofieldwe/public_html/demo/tb/functions.php on line 47
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 47
+[13-Feb-2019 14:10:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ofieldwe/public_html/demo/tb/functions.php on line 50
+[13-Feb-2019 15:17:01 Asia/Jakarta] PHP Notice:  Undefined variable: jumlah_retur in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 26
+[13-Feb-2019 15:17:01 Asia/Jakarta] PHP Notice:  Undefined variable: id_transaksi in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:17:01 Asia/Jakarta] PHP Notice:  Undefined variable: id_barang in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:17:01 Asia/Jakarta] PHP Notice:  Undefined variable: jumlah_baru in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:18:45 Asia/Jakarta] PHP Notice:  Undefined variable: jumlah_retur in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 26
+[13-Feb-2019 15:18:45 Asia/Jakarta] PHP Notice:  Undefined variable: id_transaksi in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:18:45 Asia/Jakarta] PHP Notice:  Undefined variable: id_barang in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:18:45 Asia/Jakarta] PHP Notice:  Undefined variable: jumlah_baru in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:33:26 Asia/Jakarta] PHP Notice:  Undefined index: Nama_barang in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 122
+[13-Feb-2019 15:34:32 Asia/Jakarta] PHP Notice:  Undefined index: Nama_barang in /home/ofieldwe/public_html/demo/tb/retur/edit_retur_bagus.php on line 122
+[13-Feb-2019 15:37:00 Asia/Jakarta] PHP Notice:  Undefined variable: jumlah_retur in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 26
+[13-Feb-2019 15:37:00 Asia/Jakarta] PHP Notice:  Undefined variable: id_transaksi in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:37:00 Asia/Jakarta] PHP Notice:  Undefined variable: id_barang in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 15:37:00 Asia/Jakarta] PHP Notice:  Undefined variable: jumlah_baru in /home/ofieldwe/public_html/demo/tb/retur/delete_retur.php on line 28
+[13-Feb-2019 16:14:40 Asia/Jakarta] PHP Notice:  Undefined index: nama_barang in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 88
+[13-Feb-2019 16:14:40 Asia/Jakarta] PHP Notice:  Undefined index: nama_barang in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 88
+[13-Feb-2019 16:14:40 Asia/Jakarta] PHP Notice:  Undefined index: nama_barang in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 143
+[13-Feb-2019 16:14:40 Asia/Jakarta] PHP Notice:  Undefined index: nama_barang in /home/ofieldwe/public_html/demo/tb/retur/retur.php on line 143

@@ -1,0 +1,65 @@
+.navbar{
+	border-radius: 0px;
+}
+
+.bg-green{
+	background-color: #2ecc71;
+	color: #eaecee;
+}
+
+.bg-green-alt{
+	background-color: #eaecee;
+	color: #2ecc71;
+}
+
+.bg-btn-cancel{
+	border-color: #e74c3c;
+	background-color: #eafaf1;
+	color: #e74c3c;
+}
+
+.bg-btn-hold{
+	border-color: #2ecc71;
+	background-color: #eafaf1;
+	color: #2ecc71;
+}
+
+.bg-green-soft{
+	background-color: #eafaf1;
+}
+
+.my-btn{
+	/*border-color: #2ecc71;*/
+	border-radius: 50px;
+	/*background-color: #eaeded;*/
+}
+
+.btn-menu{
+	border-color: #2ecc71;
+	background-color: white;
+	color: #2ecc71;
+	font-size: 25px;
+	padding: 20px;
+}
+
+
+a{
+
+}
+
+a:hover{
+	color: #abebc6;
+	text-decoration: none;
+}
+.add-link {
+	color: #2ecc71;
+	text-decoration: none;
+}
+
+.btn-hapus{
+	padding-right: 0px;
+}
+
+.card{
+	
+}
