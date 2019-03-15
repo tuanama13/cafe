@@ -7,10 +7,31 @@
 
 
 <!-- Header Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-green">
+<nav class="navbar navbar-light bg-green">
 	<!-- <a href="" class="navbar-brand">Navbar</a> -->
-	<span class="navbar-brand mb-0 h1">Botanical Cafe</span>
-	
+	<div class="container">		
+		<a class="navbar-brand" href="index.php">
+				<!-- <img src="assets/img/ico.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+				Botanical Cafe
+		</a>
+
+		<div class="account pull-right">
+			<img src="../dist/img/ico_coffee.png" class="img-avatar" alt="avatar">
+			<div class="btn-group" style="margin-top:7px;">
+				<button type="button" class="btn btn-default bg-green account-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Antony <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-right" style="margin-top:10px;">
+					<li><a href="#"><i class="fas fa-address-card"></i>Antony Jarot</a></li>
+					<li><a href="#"><i class="fas fa-clock"></i>Member Since 2018</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#"><i class="fas fa-power-off"></i>Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /account -->
+		
+	</div>	
 </nav>
 
 <div class="">
@@ -24,21 +45,91 @@
 						<div class="form-group col-md-4 pull-right">
 							<div class="input-group">                  			
 	                  			<input type="text" class="form-control my-btn" style="background-color: #faf6f6" id="txtSearch" name="txtSearch" placeholder="Pencarian" aria-describedby="basic-addon3" required>
-	                  			<span class="input-group-addon my-btn bg-green" id="basic-addon3" style="font-size: 18px;"><i class="fa fa-search"></i></span>
+	                  			<span class="input-group-addon my-btn bg-green" id="basic-addon3" style="font-size: 18px;"><i class="fas fa-search"></i></span>
 		                  	</div>		                  		
 						</div>						
 					</div>
-					<div class="panel-body">
-						<div class="card">
-							<img class="card-img-top" src="../dist/img/photo2.png" alt="Card Image">
-							<div class="card-body">
-								<h5 class="card-title">Pisang Goreng</h5>
-								<p class="card-text">Rp.5.000</p>
-							</div>							
+					<div class="panel-body" style=" width: 100%; height: 350px; overflow-y: auto;">
+						
+						<div class="row">
+							<!-- col 3 -->
+							<div class="col-md-3">
+								<div class="panel panel-default">
+								  <div class="panel-body ">
+									   <img src="../dist/img/ico_coffee.png" alt="" style="width: 100%">
+									   <div class="title-menu">
+									   		<h4> Kopi Saring</h4>
+									   		<p>Rp 5.000</p>
+									   </div>							   
+								  </div>
+								</div>					
+							</div>
+							<!-- / col 3 -->
+
+							<!-- col 3 -->
+							<div class="col-md-3">
+								<div class="panel panel-default">
+								  <div class="panel-body ">
+									   <img src="../dist/img/ico_coffee.png" alt="" style="width: 100%">
+									   <div class="title-menu">
+									   		<h4> Kopi Saring</h4>
+									   		<p>Rp 5.000</p>
+									   </div>							   
+								  </div>
+								</div>					
+							</div>
+							<!-- / col 3 -->
+
+							<!-- col 3 -->
+							<div class="col-md-3">
+								<div class="panel panel-default">
+								  <div class="panel-body ">
+									   <img src="../dist/img/ico_coffee.png" alt="" style="width: 100%">
+									   <div class="title-menu">
+									   		<h4> Kopi Saring</h4>
+									   		<p>Rp 5.000</p>
+									   </div>							   
+								  </div>
+								</div>					
+							</div>
+							<!-- / col 3 -->
+
+							<!-- col 3 -->
+							<div class="col-md-3">
+								<div class="panel panel-default">
+								  <div class="panel-body ">
+									   <img src="../dist/img/ico_coffee.png" alt="" style="width: 100%">
+									   <div class="title-menu">
+									   		<h4> Kopi Saring</h4>
+									   		<p>Rp 5.000</p>
+									   </div>							   
+								  </div>
+								</div>					
+							</div>
+							<!-- / col 3 -->
+
+							<!-- col 3 -->
+							<div class="col-md-3">
+								<div class="panel panel-default">
+								  <div class="panel-body ">
+									   <img src="../dist/img/ico_coffee.png" alt="" style="width: 100%">
+									   <div class="title-menu">
+									   		<h4> Kopi Saring</h4>
+									   		<p>Rp 5.000</p>
+									   </div>							   
+								  </div>
+								</div>					
+							</div>
+							<!-- /c ol 3 -->
 						</div>
+						<!-- /row -->					
 					</div>
+					<!-- /panel body -->
 				</div>
+				<!-- /panel -->
 			</div>
+			<!-- /col 12 -->
+			<!-- col 12 -->
 			<div class="col-md-12" style="padding: 0px;">
 				<div class="col-md-4">
 					<button type="button" class="btn btn-menu btn-lg btn-block"><img src="../dist/img/ico_coffee.png" alt=""><br><strong>Drink</strong></button>
@@ -50,8 +141,8 @@
 					<button type="button" class="btn btn-menu btn-lg btn-block"><img src="../dist/img/ico_food.png" alt=""><br><strong>Food</strong></button>
 				</div>					
 			</div>
+			<!-- /col 12 -->
 		</div>
-
 		<!-- end col-8 -->
 
 		<!-- col-4 -->
@@ -71,7 +162,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td width="7%"><i style="font-size: 18px; color: #2ecc71;" class="fa fa-trash"></i></td>
+								<td width="7%"><a href="" title=""><i style="font-size: 18px; color: #2ecc71;" class="fa fa-trash"></i></a></td>
 								<td style="text-align: left;">Teh Es</td>
 								<td style="text-align: center;">
 									<a href="" title=""><i style="font-size: 18px; color: #2ecc71;" class="fa fa-plus-circle"></i></a> 
@@ -81,7 +172,7 @@
 								<td style="text-align: right;">Rp. 5.000</td>
 							</tr>
 							<tr>
-								<td width="7%"><i style="font-size: 18px; color: #2ecc71;" class="fa fa-trash"></i></td>
+								<td width="7%"><a href="" title=""><i style="font-size: 18px; color: #2ecc71;" class="fa fa-trash"></i></a></td>
 								<td style="text-align: left;">Kopi Panas</td>
 								<td style="text-align: center;">
 									<a href="" title=""><i style="font-size: 18px; color: #2ecc71;" class="fa fa-plus-circle"></i></a> 
@@ -91,7 +182,7 @@
 								<td style="text-align: right;">Rp. 6.000</td>
 							</tr>
 							<tr>
-								<td width="7%"><i style="font-size: 18px; color: #2ecc71;" class="fa fa-trash"></i></td>
+								<td width="7%"><a href="" title=""><i style="font-size: 18px; color: #2ecc71;" class="fa fa-trash"></i></a></td>
 								<td style="text-align: left;">Pisang Goreng</td>
 								<td style="text-align: center;">
 									<a href="" title=""><i style="font-size: 18px; color: #2ecc71;" class="fa fa-plus-circle"></i></a> 
