@@ -28,7 +28,7 @@
       </tr>
         <?php 
           foreach ($data as $value): 
-            $desc_produk = strpos($value['desc_produk'],' ',150);
+            // $desc_produk = strpos($value['desc_produk'],' ',150);
             // $image =  str_replace("", "",$value['image_produk']
         ?>
 
@@ -36,7 +36,7 @@
           <td p align="center" bgcolor="#FFFFFF"><?php echo $value['id_produk'] ?></td>
           <td p align="center" bgcolor="#FFFFFF"><?php echo $value['id_kat'] ?></td>
           <td p align="left" bgcolor="#FFFFFF"><?php echo $value['nama_produk']?></td>
-          <td p align="left" bgcolor="#FFFFFF"><?php echo substr($value['desc_produk'],0,$desc_produk) ?></td>
+          <td p align="left" bgcolor="#FFFFFF"><?php echo substr($value['desc_produk'],0,100) ?></td>
           <td p align="center" bgcolor="#FFFFFF"><img src='<?php echo '..'.$value['image_produk']?>' alt=""></td>
           <td p align="right" bgcolor="#FFFFFF"><?php echo $value['harga_produk'] ?></td>
           <!-- <td p align="center" bgcolor="#FFFFFF">

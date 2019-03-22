@@ -94,7 +94,7 @@ div.title-menu>h4{
 	text-align: center;
 	/* color: #eceff1; */
 }
-div.title-menu>p {
+div.title-menu>p.p-harga {
 	text-align: center;
-	color: darkgray;
+	color: #2ecc71;
 }
