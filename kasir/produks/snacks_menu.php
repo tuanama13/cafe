@@ -2,16 +2,16 @@
     $path = realpath(__DIR__ . '/../..');
     // include_once($path . '/init/db.pdo.php');
     include_once($path . '/init/db.pdo.php');
-    include_once 'Drinks.php';
+    include_once '../models/Produks.php';
     include_once '../functions.php';
 
     $database = new Database();
     $db = $database->connect();
     // private $conn;
 
-    $booking = new Drink($db);
+    $snack = new Produk($db);
 
-    $result = $booking->readDrinks();
+    $result = $snack->readSnacks();
 
     foreach ($result as $value): 
                             echo"

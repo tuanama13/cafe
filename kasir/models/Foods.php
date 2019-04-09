@@ -3,7 +3,7 @@
     // include_once($path . '/init/db.pdo.php');
     include_once($path . '/init/db.pdo.php');
     
-    class Drink
+    class Food
     {
         private $conn;
         public $id_produk;
@@ -20,9 +20,9 @@
             $this->conn = $db;
         }
 
-        function readDrinks()
+        function readFoods()
         {
-            $query = "SELECT * FROM tbl_produk WHERE id_kat = 2";
+            $query = "SELECT * FROM tbl_produk WHERE id_kat = 1";
 
             $stmt = $this->conn->prepare($query);
             $stmt->execute();

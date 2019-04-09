@@ -98,3 +98,7 @@ div.title-menu>p.p-harga {
 	text-align: center;
 	color: #2ecc71;
 }
+
+table.table-header{
+	margin-bottom:0px;
+}
