@@ -16,7 +16,7 @@
     foreach ($result as $value): 
                             echo"
 								<!-- col 3 -->
-								<div class='col-md-3'>
+								<div class='col-md-3' id='produk-select' class='produk-select' onclick='myPesan(\"$value[id_produk]\",\"$value[nama_produk]\",\"$value[harga_produk]\")'>
 									<div class='panel panel-default'>
 									<div class='panel-body'>
 										<img src='../".$value['image_produk']."' class='img-responsive img-rounded' alt='".$value['nama_produk']."' style='width: 100%'>
