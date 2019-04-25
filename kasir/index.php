@@ -161,8 +161,8 @@
 						<!-- <caption>table title and/or explanatory text</caption> -->
 						<thead>
 							<tr>
-								<td style="text-align: center;"><strong>Total</strong></td>
-								<td style="text-align: right;"><strong>Rp. 65.000</strong></td>
+								<td style="text-align: left;" width='20%'><strong>Total</strong></td>
+								<td id="total_pesan" style="text-align: right;"><strong>Rp. 0</strong></td>
 							</tr>
 						</thead>
 					</table>
@@ -186,6 +186,7 @@
 
 <script>
 	var rowid = 1;
+	var sub_total = 0;
 
 	// Tombol Menu Minuman
 	$(document).on('click', '#btn-menu-drink', function (e) {
@@ -227,21 +228,65 @@
 
 	});
 
-	function myPesan(id_produk, nama_produk, harga_produk) {
-		// var id_produk_ = id_produk;
-		// var nama_produk_ = nama_produk;
-		// var harga_produk_ = harga_produk;
-		console.log(id_produk);
-		console.log(nama_produk);
-		console.log(harga_produk);
+	function loadJumlah(subtotal) {
+		document.getElementById('total_pesan').innerHTML = subtotal ;
+	}
 
+
+	function tambah(rowid, harga_produk) {
+		// console.log(rowid);
 		
-		var row = "<tr><td width='7%'><a href='' title=''><i style='font-size: 18px; color: #2ecc71;' class='fa fa-trash'></i></a></td><td style='font-size: 12px; text-align: left;'>"+nama_produk.substr(0, 9)+"</td><td style='text-align: center;'><a href='' title=''><i style='font-size: 18px; color: #2ecc71;' class='fa fa-plus-circle'></i></a><span style='margin-left: 7px; margin-right: 7px;'>1</span><a href='' title=''><i style='font-size: 18px; color: #2ecc71;' class='fa fa-minus-circle'></i></td><td style='text-align: right;'>Rp. "+harga_produk+"</td></tr>";
+		
+		var qty = $("#jumlah"+rowid).text();
+		// console.log(qty);
+
+		qty = parseInt(qty)+1;
+		// var total = qty*harga_produk;
+		sub_total = sub_total + harga_produk;
+		console.log(sub_total);		
+		document.getElementById('jumlah'+rowid).innerHTML = qty;
+
+		loadJumlah(sub_total);
+	}
+
+	function kurang(rowid, harga_produk) {
+
+		var qty = $("#jumlah"+rowid).text();
+
+		if (qty == 1) {
+			document.getElementById('jumlah'+rowid).innerHTML = 1;
+		} else {
+			qty = parseInt(qty)-1;
+			sub_total = sub_total - harga_produk;		
+			document.getElementById('jumlah'+rowid).innerHTML = qty;
+		}
+		
+		loadJumlah(sub_total);	
+	}
+
+	function myPesan(id_produk, nama_produk, harga_produk) {
+		
+		var row = "<tr id='"+rowid+"'><td width='7%'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-trash' onclick='delPesan("+rowid+","+harga_produk+")'></i></td><td style='font-size: 12px; text-align: left;'>"+nama_produk.substr(0, 9)+"</td><td style='text-align: center;'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-plus-circle' onclick='tambah("+rowid+","+harga_produk+")'></i><span style='margin-left: 7px; margin-right: 7px;' id='jumlah"+rowid+"'>1</span><i style='font-size: 18px; color: #2ecc71;' class='fa fa-minus-circle' onclick='kurang("+rowid+","+harga_produk+")'></i></td><td style='text-align: right;'>Rp. "+harga_produk+"</td></tr>";
 
 		var markup = "<tr id='" + rowid + "'><td>1</td><td>1000</td><td>1000</td><td>1</td><td><button type='button' class='delete-row btn btn-danger' data-sub='1' data-id_brg='1' data-jumlah='1000' data-row ='" + rowid + "'>Delete Row</button></td></tr>";
-			$("#tbl-pesanan tbody").append(row);
+		
+		sub_total = sub_total + parseInt(harga_produk);
+		loadJumlah(sub_total);
+		$("#tbl-pesanan tbody").append(row);
 
 		rowid = rowid + 1;
 	}
+	function delPesan(rowid, harga_produk) {
+		// console.log(rowid);
+		var qty = $("#jumlah"+rowid).text();
+		var total = parseInt(qty)*harga_produk;
+		sub_total = sub_total - total;
+
+		loadJumlah(sub_total);
+		$('#'+rowid).remove();
+		
+	}
+
+
 
 </script>
