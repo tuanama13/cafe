@@ -24,8 +24,11 @@
 		</a>
 
 		<div class="account pull-right">
+			<img src="../dist/img/ico_table.svg" id="link_table" style="width: 30px; height: 30px;  margin-right: 20px; fill: white;">
+
 			<img src="../dist/img/ico_coffee.png" class="img-avatar" alt="avatar">
-			<div class="btn-group" style="margin-top:7px;">
+			<div class="btn-group" style="margin-top:7px;">			
+
 				<button type="button" class="btn btn-default bg-green account-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Antony <span class="caret"></span>
 				</button>
@@ -161,8 +164,8 @@
 						<!-- <caption>table title and/or explanatory text</caption> -->
 						<thead>
 							<tr>
-								<td style="text-align: left;" width='20%'><strong>Total</strong></td>
-								<td id="total_pesan" style="text-align: right;"><strong>Rp. 0</strong></td>
+								<td style="text-align: left;" width='20%'><strong><h3>Total</h3></strong></td>
+								<td style="text-align: right;"><strong><h3 id="total_pesan">0</h3></strong></td>
 							</tr>
 						</thead>
 					</table>
@@ -178,15 +181,125 @@
 			<button type="submit" class="btn bg-btn-cancel btn-lg pull-right"><span style="font-size: 15px;"><strong>Cancel Order</strong></span></button>
 		</div>
 		<div class="col-md-4">
-			<button type="submit" class="btn bg-green btn-lg" style="display:inline-block; width: 100%;"><span style="font-size: 15px;"><strong>Pay (Rp. 65.000)</strong></span></button>
+			<button type="button" id="btn_pay" data-toggle="modal" data-target="#exampleModal" class="btn bg-green btn-lg" style="display:inline-block; width: 100%;"><span style="font-size: 15px;"><strong>Pay</strong></span></button>
 		</div>
 	</div>
 </div>
 
 
+<!-- Modal Pay -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+					<h3 class="modal-title" id="exampleModalLabel">Payment</h3>
+					
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="panel panel-default">
+								<div class="panel-body" style="padding: 10px;">
+									
+									<table style="padding-left: 10px;">
+										<tbody>
+											<tr>
+												<td><h4 style="margin-bottom: 5px;">Total</h4></td>
+											</tr>
+											<tr>
+												<td ><h3 id="txtTotal" style="margin-top: 5px; margin-bottom: 30px;">Rp 0</h3></td>
+											</tr>
+											<tr>
+												<td><h4 style="margin-bottom: 5px;">Bayar</h4></td>
+											</tr>
+											<tr>
+												<td><h3 id="txtBayar" style="margin-top: 5px; margin-bottom: 30px;">Rp 0</h3></td>
+											</tr>
+											<tr>
+												<td><h4 style="margin-bottom: 5px;">Kembalian</h4></td>
+											
+											</tr>
+											<tr>
+													<td><h3 id="txtKembalian" style="margin-top: 5px; margin-bottom: 30px;">Rp 0</h3></td>
+											</tr>
+										</tbody>
+									</table>
+								
+										
+								</div>
+								<!-- /panel body -->
+							</div>
+							<!-- /panel -->
+						</div>
+						<!-- /col-md-4 -->
+						<div class="col-md-8">
+							<div class="panel panel-default">
+								<div class="panel-heading" style="background-color: white; border: none;">
+									<div class="form-group col-md-12">
+				                  		<div class="input-group" >
+				                  			<span class="input-group-addon" id="basic-addon3" style="height: 80px; font-size: 2em">Rp</span>
+				                  			<input type="text" style="height: 80px; font-size: 3em; text-align: right;" class="form-control" id="jumlah_bayar" name="jumlah_bayar" placeholder="Jumlah Bayar" value="0" required aria-describedby="basic-addon4">
+				                  		</div>
+				                	</div>
+												
+								</div>
+								<div class="panel-body" style="padding: 30px;">								
+									<button type="button" class="btn_cal col-md-4" onclick="calc('1')">1</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('2')">2</button>
+									<button  type="button" class="btn_cal col-md-4" onclick="calc('3')">3</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('4')">4</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('5')">5</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('6')">6</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('7')">7</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('8')">8</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('9')">9</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('000')">000</button>
+									<button type="button" class="btn_cal col-md-4" onclick="calc('0')">0</button>
+									<button type="button" class="btn_cal col-md-4" onclick="delCalc()"><</button>
+										
+								</div>
+								<!-- /panel body -->
+							</div>
+							<!-- /panel -->
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+					<button type="button" id="btn_kat" style="width: 150px;" class="btn_kat btn btn-lg btn-primary">Pay</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Modal Pay -->
+
+
+
+
 <script>
 	var rowid = 1;
 	var sub_total = 0;
+	var jumlah_bayar_ = "";
+	var txt_jumlahBayar = document.getElementById("jumlah_bayar");
+	var txt_bayar = document.getElementById("txtBayar");
+	var txt_kembali = document.getElementById("txtKembalian");
+
+	$(document).ready(function(){
+			// loadJumlah();
+	});
+
+	$('#exampleModal').on('shown.bs.modal', function () {
+			$('#int_kategori').trigger('focus')
+	})
+
+	// Tombol Table Page
+	$(document).on('click', '#link_table', function (e) {
+
+		window.location.href = 'table.php';
+	});
 
 	// Tombol Menu Minuman
 	$(document).on('click', '#btn-menu-drink', function (e) {
@@ -228,8 +341,49 @@
 
 	});
 
+	// fungsi untuk hitung total
 	function loadJumlah(subtotal) {
-		document.getElementById('total_pesan').innerHTML = subtotal ;
+		var subtotal_ = "Rp "+formatRupiah(subtotal.toString() ,"");
+		// if (typeof subtotal == "string") {
+		// 	document.getElementById('total_pesan').innerHTML = subtotal;
+		// document.getElementById('txtTotal').innerHTML = subtotal;
+		// } else {
+			document.getElementById('total_pesan').innerHTML = subtotal_;
+		document.getElementById('txtTotal').innerHTML = subtotal_;	
+		// }
+		// console.log(typeof subtotal);
+	}
+
+
+	function loadBayar(jumlahBayar) {
+
+		txt_jumlahBayar.value = formatRupiah(jumlahBayar,"");
+		txt_bayar.innerHTML = "Rp "+formatRupiah(jumlahBayar,"");
+		txt_kembali.innerHTML = "Rp "+formatRupiah((jumlahBayar - sub_total).toString(),"");
+
+		// console.log(jumlahBayar);
+	}
+
+	function delCalc() {
+		var new_jumlah_bayar_ = jumlah_bayar_[jumlah_bayar_.length - 1];
+
+		var jumlah_bayar_new = jumlah_bayar_.replace(new_jumlah_bayar_,"");
+		// // console.log(jumlah_bayar_);
+		// // console.log();
+
+		// txt_jumlahBayar.value = formatRupiah(jumlah_bayar_new,"")
+
+		// jumlah_bayar_=jumlah_bayar_new;
+		// console.log(jumlah_bayar_.length);
+		if (jumlah_bayar_.length==1) {
+			txt_jumlahBayar.value = 0;
+			jumlah_bayar_="";
+		} else {
+			txt_jumlahBayar.value = formatRupiah(jumlah_bayar_new,"")
+
+			jumlah_bayar_=jumlah_bayar_new;
+		}
+
 	}
 
 
@@ -243,7 +397,7 @@
 		qty = parseInt(qty)+1;
 		// var total = qty*harga_produk;
 		sub_total = sub_total + harga_produk;
-		console.log(sub_total);		
+		// console.log(sub_total);		
 		document.getElementById('jumlah'+rowid).innerHTML = qty;
 
 		loadJumlah(sub_total);
@@ -266,7 +420,7 @@
 
 	function myPesan(id_produk, nama_produk, harga_produk) {
 		
-		var row = "<tr id='"+rowid+"'><td width='7%'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-trash' onclick='delPesan("+rowid+","+harga_produk+")'></i></td><td style='font-size: 12px; text-align: left;'>"+nama_produk.substr(0, 9)+"</td><td style='text-align: center;'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-plus-circle' onclick='tambah("+rowid+","+harga_produk+")'></i><span style='margin-left: 7px; margin-right: 7px;' id='jumlah"+rowid+"'>1</span><i style='font-size: 18px; color: #2ecc71;' class='fa fa-minus-circle' onclick='kurang("+rowid+","+harga_produk+")'></i></td><td style='text-align: right;'>Rp. "+harga_produk+"</td></tr>";
+		var row = "<tr id='"+rowid+"'><td width='7%'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-trash' onclick='delPesan("+rowid+","+harga_produk+")'></i></td><td style='font-size: 12px; text-align: left;'>"+nama_produk.substr(0, 9)+"</td><td style='text-align: center;'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-plus-circle' onclick='tambah("+rowid+","+harga_produk+")'></i><span style='margin-left: 7px; margin-right: 7px;' id='jumlah"+rowid+"'>1</span><i style='font-size: 18px; color: #2ecc71;' class='fa fa-minus-circle' onclick='kurang("+rowid+","+harga_produk+")'></i></td><td style='text-align: right;'>Rp. "+formatRupiah(harga_produk,"")+"</td></tr>";
 
 		var markup = "<tr id='" + rowid + "'><td>1</td><td>1000</td><td>1000</td><td>1</td><td><button type='button' class='delete-row btn btn-danger' data-sub='1' data-id_brg='1' data-jumlah='1000' data-row ='" + rowid + "'>Delete Row</button></td></tr>";
 		
@@ -285,6 +439,12 @@
 		loadJumlah(sub_total);
 		$('#'+rowid).remove();
 		
+	}
+
+	function calc(value) {
+		// console.log(value);
+		jumlah_bayar_ += value;
+		loadBayar(jumlah_bayar_);
 	}
 
 

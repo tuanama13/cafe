@@ -102,3 +102,13 @@ div.title-menu>p.p-harga {
 table.table-header{
 	margin-bottom:0px;
 }
+
+button.btn_cal{
+	font-size: 2em;
+	height: 70px;
+	border-color: #2ecc71;
+	background-color: white;
+	color: #2ecc71;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}

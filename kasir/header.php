@@ -85,6 +85,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- AdminLTE App -->
     <script src="/cafe/dist/js/app.min.js"></script>
 
+    <!-- My Custome Script -->
+    <script src="/cafe/dist/js/myScript.js"></script>
+
   <!-- </head> -->
   </head>
   <!--
