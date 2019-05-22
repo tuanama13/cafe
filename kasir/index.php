@@ -1,10 +1,17 @@
-<?php  
+<?php
+	ob_start();  
 	$path = realpath(__DIR__ . '/..');
 	// var_dump($path);
 	$path_image = dirname('/'); 
 	include ('header.php');
 	include_once($path . '/init/db.pdo.php');
 	include('functions.php');
+
+	if (empty($_GET['table'])) {
+		header("Location: table.php");
+	}else {
+		$table = $_GET['table'];
+	}
 
 	$database = new Database();
     $db = $database->connect();
@@ -52,10 +59,10 @@
 			<div class="col-md-12">
 				<div class="panel panel-default">
 					<div class="panel-heading" style="margin-top: 10px; background-color: white; border: none;">
-						<a href="" title="" class="add-link" style="font-size: 16px;">+ Add New Menu</a>
+						<a href="#" title="" class="add-link" style="font-size: 25px;">Menu</a>
 						<div class="form-group col-md-4 pull-right">
 							<div class="input-group">                  			
-	                  			<input type="text" class="form-control my-btn" style="background-color: #faf6f6" id="txtSearch" name="txtSearch" placeholder="Pencarian" aria-describedby="basic-addon3" required>
+	                  			<input type="text" class="form-control my-btn" style="background-color: #faf6f6" id="txtSearch" name="txtSearch" placeholder="Pencarian" onkeyup="searchProd()" aria-describedby="basic-addon3" required>
 	                  			<span class="input-group-addon my-btn bg-green" id="basic-addon3" style="font-size: 18px;"><i class="fas fa-search"></i></span>
 		                  	</div>		                  		
 						</div>						
@@ -113,7 +120,7 @@
 		<div class="col-md-4">
 			<div class="panel panel-default" style="height: 450px;"	 >
 				<div class="panel-heading" style="background-color: white; border: none; text-align: center;">
-					<h4>Checkout</h4>
+					<h4> <strong>Checkout Table <?php echo $table; ?> </strong></h4>
 					<h6>Trans. #20190300001</h6>
 					
 				</div>
@@ -206,6 +213,12 @@
 									
 									<table style="padding-left: 10px;">
 										<tbody>
+											<tr>
+												<td><h2 style="margin-bottom: 25px;">Table <?php echo $table; ?></h2></td>
+												<div class="divider">
+													
+												</div>
+											</tr>
 											<tr>
 												<td><h4 style="margin-bottom: 5px;">Total</h4></td>
 											</tr>
@@ -356,6 +369,9 @@
 
 
 	function loadBayar(jumlahBayar) {
+		if (jumlahBayar == "") {
+			jumlahBayar = '0';
+		}
 
 		txt_jumlahBayar.value = formatRupiah(jumlahBayar,"");
 		txt_bayar.innerHTML = "Rp "+formatRupiah(jumlahBayar,"");
@@ -378,10 +394,12 @@
 		if (jumlah_bayar_.length==1) {
 			txt_jumlahBayar.value = 0;
 			jumlah_bayar_="";
+			loadBayar(jumlah_bayar_);
 		} else {
 			txt_jumlahBayar.value = formatRupiah(jumlah_bayar_new,"")
 
 			jumlah_bayar_=jumlah_bayar_new;
+			loadBayar(jumlah_bayar_new);
 		}
 
 	}
@@ -445,6 +463,40 @@
 		// console.log(value);
 		jumlah_bayar_ += value;
 		loadBayar(jumlah_bayar_);
+	}
+
+	function searchProd() {
+		var value = document.getElementById("txtSearch").value;
+		// console.log(value);
+
+		if (value=="") {
+			$.ajax({
+				url: "produks/drinks_menu.php",
+				success: function (result) {
+					//   console.log(result);
+					document.getElementById('menu').innerHTML = result;
+				}
+			});
+
+		} else {
+
+			$.ajax({
+				type  : "GET",
+	      		data  : "cari="+value,
+				url		: "produks/search_menu.php",
+				success: function (result) {
+					// console.log(result);
+					//   console.log(result);
+
+					if (result=="") {
+						document.getElementById('menu').innerHTML = "<h3 class='text-center'>Menu Tidak Ditemukan</h3>";
+					} else {
+						document.getElementById('menu').innerHTML = result;	
+					}
+					
+				}
+			});
+		}
 	}
 
 

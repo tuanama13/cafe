@@ -50,6 +50,17 @@
             return $stmt;
         }
 
+        function searchMenus()
+        {
+            $query = "SELECT * FROM tbl_produk WHERE nama_produk LIKE :nama";
+
+            $stmt = $this->conn->prepare($query);
+            $stmt->bindParam(':nama', $this->nama_produk);
+            $stmt->execute();
+
+            return $stmt;
+        }
+
 
 
 
