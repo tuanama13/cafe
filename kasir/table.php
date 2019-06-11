@@ -4,6 +4,7 @@
     include_once($path . '/init/db.pdo.php');
     include_once 'header.php';
     include_once 'models/Cabangs.php';
+    include_once 'models/Orders.php';
     include_once 'functions.php';
 
     $database = new Database();
@@ -11,6 +12,10 @@
 
     $cabang = new Cabang($db);
     $result = $cabang->readJumMeja(1);
+
+    $order = new Order($db);
+	// $maxid = $order->cekLastOrder();
+	$orders = $order->readOrders();
 
     foreach ($result as $value) {
        $jumlah_meja = $value['jumlah_meja'];
@@ -48,57 +53,29 @@
                 <div class="panel-heading">
                     <h3>Today Transaction</h3>
                 </div>
-                <div class='panel-body text-center'>
-                    <table class="table">
-                        <tr>
-                            <td rowspan="0" width="30%"><h2>7</h2></td>
-                            <td><h4 style='text-align:left; margin:5px;'>Rp 50.000</h4></td>
-                            
-                        </tr>
-                        <tr>
-                            <td style="text-align:left; margin:5px;"><h5>10/05/2019 09.00</h5></td>
-                        </tr>                        
-                    </table>
-                    <table class="table">
-                        <tr>
-                            <td rowspan="0" width="30%"><h2>1</h2></td>
-                            <td><h4 style='text-align:left; margin:5px;'>Rp 18.000</h4></td>
-                            
-                        </tr>
-                        <tr>
-                            <td style="text-align:left; margin:5px;"><h5>10/05/2019 09.15</h5></td>
-                        </tr>                        
-                    </table>
-                    <table class="table">
-                        <tr>
-                            <td rowspan="0" width="30%"><h2>5</h2></td>
-                            <td><h4 style='text-align:left; margin:5px;'>Rp 10.000</h4></td>
-                            
-                        </tr>
-                        <tr>
-                            <td style="text-align:left; margin:5px;"><h5>10/05/2019 09.30</h5></td>
-                        </tr>                        
-                    </table>
-                    <table class="table">
-                        <tr>
-                            <td rowspan="0" width="30%"><h2>7</h2></td>
-                            <td><h4 style='text-align:left; margin:5px;'>Rp 9.000</h4></td>
-                            
-                        </tr>
-                        <tr>
-                            <td style="text-align:left; margin:5px;"><h5>10/05/2019 09.30</h5></td>
-                        </tr>                        
-                    </table>
-                    <table class="table">
-                        <tr>
-                            <td rowspan="0" width="30%"><h2>10</h2></td>
-                            <td><h4 style='text-align:left; margin:5px;'>Rp 5.000</h4></td>
-                            
-                        </tr>
-                        <tr>
-                            <td style="text-align:left; margin:5px;"><h5>10/05/2019 09.30</h5></td>
-                        </tr>                        
-                    </table>
+                <div class='panel-body text-center' style="padding-top : 0px; padding-bottom : 0px;">
+                  <?php 
+                    foreach ($orders as $value_order) {
+                        echo"
+                        <table class='table' style='margin-bottom : 0px;'>
+                            <tr>
+                                <td rowspan='0' width='30%'>
+                                    <h2>".$value_order['no_meja']."</h2>
+                                </td>
+                                <td>
+                                    <h4 style='text-align:left; margin:5px;'>".rupiah($value_order['grandtotal'])."</h4>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td style='text-align:left; margin:5px;'>
+                                    <h5>".$value_order['tgl_order']."</h5>
+                                </td>
+                            </tr>
+                        </table>";
+                    }
+
+                  ?>
                 </div>
                 <!-- /panel body -->
             </div>

@@ -1,5 +1,5 @@
 <?php
-	
+	// $conn;
 
 	function rupiah($angka){
 	
@@ -142,4 +142,6 @@
 
 		return $total_harian[$angka];
 	}
+
+	
 ?>

@@ -5,6 +5,7 @@
 	$path_image = dirname('/'); 
 	include ('header.php');
 	include_once($path . '/init/db.pdo.php');
+	include_once 'models/Orders.php';
 	include('functions.php');
 
 	if (empty($_GET['table'])) {
@@ -13,11 +14,30 @@
 		$table = $_GET['table'];
 	}
 
+	// id cabang
+	$id_cabang_ = 1;
+
+	// id User
+	$id_user_ = 1;
+
+
+
+	// Keterangan :
+	// -> no meja = $table
+	// -> nomor order next = $_maxid
+	// -> id cabang = $id_cabang_
+	// -> id User = $id_user_
+
+
 	$database = new Database();
     $db = $database->connect();
 	$query = $db->prepare("SELECT * FROM tbl_produk WHERE id_kat = 2");
 	$query->execute();
 	$data = $query->fetchAll(); 
+
+	$order = new Order($db);
+	$maxid = $order->cekLastOrder();
+
 ?>
 
 
@@ -121,7 +141,9 @@
 			<div class="panel panel-default" style="height: 450px;"	 >
 				<div class="panel-heading" style="background-color: white; border: none; text-align: center;">
 					<h4> <strong>Checkout Table <?php echo $table; ?> </strong></h4>
-					<h6>Trans. #20190300001</h6>
+					<h6>Trans. #<?php foreach ($maxid as $value) {
+											$_maxid = $value['maxid']+1;
+        								echo $_maxid ;} ?></h6>
 					
 				</div>
 				<div style="padding-left:15px; padding-right:15px;">
@@ -282,7 +304,7 @@
 				</div>
 				<div class="modal-footer">
 					<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-					<button type="button" id="btn_kat" style="width: 150px;" class="btn_kat btn btn-lg btn-primary">Pay</button>
+					<button type="button" id="btn_pay_final" onclick ="pay()" style="width: 150px;" class="btn_pay_final btn btn-lg btn-primary">Pay</button>
 				</div>
 			</div>
 		</div>
@@ -405,14 +427,25 @@
 	}
 
 
-	function tambah(rowid, harga_produk) {
+	function tambah(rowid, harga_produk, id_produk) {
 		// console.log(rowid);
-		
-		
 		var qty = $("#jumlah"+rowid).text();
+		var idOrder = <?php echo $_maxid; ?>;
+		qty = parseInt(qty)+1;
+
+		$.ajax({
+				type  	: "POST",
+	      		data  	: "jumlah_order="+qty+"&id_order="+idOrder+"&id_produk="+id_produk,
+				url		: "order/update_jumlah.php",
+				success: function (result) {
+					console.log(result);					
+				}
+			});	
+		
+		
 		// console.log(qty);
 
-		qty = parseInt(qty)+1;
+		
 		// var total = qty*harga_produk;
 		sub_total = sub_total + harga_produk;
 		// console.log(sub_total);		
@@ -421,27 +454,67 @@
 		loadJumlah(sub_total);
 	}
 
-	function kurang(rowid, harga_produk) {
+	function kurang(rowid, harga_produk, id_produk) {
 
 		var qty = $("#jumlah"+rowid).text();
+		var idOrder = <?php echo $_maxid; ?>;
+
+		
 
 		if (qty == 1) {
+			qty == 1;
 			document.getElementById('jumlah'+rowid).innerHTML = 1;
 		} else {
 			qty = parseInt(qty)-1;
 			sub_total = sub_total - harga_produk;		
 			document.getElementById('jumlah'+rowid).innerHTML = qty;
 		}
+
+		$.ajax({
+				type  	: "POST",
+	      		data  	: "jumlah_order="+qty+"&id_order="+idOrder+"&id_produk="+id_produk,
+				url		: "order/update_jumlah.php",
+				success: function (result) {
+					console.log(result);					
+				}
+			});
 		
 		loadJumlah(sub_total);	
 	}
 
 	function myPesan(id_produk, nama_produk, harga_produk) {
-		
-		var row = "<tr id='"+rowid+"'><td width='7%'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-trash' onclick='delPesan("+rowid+","+harga_produk+")'></i></td><td style='font-size: 12px; text-align: left;'>"+nama_produk.substr(0, 9)+"</td><td style='text-align: center;'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-plus-circle' onclick='tambah("+rowid+","+harga_produk+")'></i><span style='margin-left: 7px; margin-right: 7px;' id='jumlah"+rowid+"'>1</span><i style='font-size: 18px; color: #2ecc71;' class='fa fa-minus-circle' onclick='kurang("+rowid+","+harga_produk+")'></i></td><td style='text-align: right;'>Rp. "+formatRupiah(harga_produk,"")+"</td></tr>";
 
-		var markup = "<tr id='" + rowid + "'><td>1</td><td>1000</td><td>1000</td><td>1</td><td><button type='button' class='delete-row btn btn-danger' data-sub='1' data-id_brg='1' data-jumlah='1000' data-row ='" + rowid + "'>Delete Row</button></td></tr>";
+		var table = <?php echo $table; ?>;
+		var idCabang = <?php echo $id_cabang_; ?>;
+		var idUser = <?php echo $id_user_; ?>;
+		var maxID = <?php echo $_maxid; ?>;
+		// console.log(table);
 		
+		
+		var row = "<tr id='"+rowid+"'><td width='7%'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-trash' onclick='delPesan("+rowid+","+harga_produk+")'></i></td><td style='font-size: 12px; text-align: left;'>"+nama_produk.substr(0, 9)+"</td><td style='text-align: center;'><i style='font-size: 18px; color: #2ecc71;' class='fa fa-plus-circle' onclick='tambah("+rowid+","+harga_produk+","+id_produk+")'></i><span style='margin-left: 7px; margin-right: 7px;' id='jumlah"+rowid+"'>1</span><i style='font-size: 18px; color: #2ecc71;' class='fa fa-minus-circle' onclick='kurang("+rowid+","+harga_produk+","+id_produk+")'></i></td><td style='text-align: right;'>Rp. "+formatRupiah(harga_produk,"")+"</td></tr>";
+
+		// var markup = "<tr id='" + rowid + "'><td>1</td><td>1000</td><td>1000</td><td>1</td><td><button type='button' class='delete-row btn btn-danger' data-sub='1' data-id_brg='1' data-jumlah='1000' data-row ='" + rowid + "'>Delete Row</button></td></tr>";
+		if (rowid == 1) {
+			$.ajax({
+				type  	: "POST",
+	      		data  	: "no_meja="+table+"&id_cabang="+idCabang+"&id_user="+idUser+"&grandtotal="+0,
+				url		: "order/create_order.php",
+				success: function (result) {
+					console.log(result);					
+				}
+			});	
+		}
+
+		$.ajax({
+				type  	: "POST",
+	      		data  	: "id_order="+maxID+"&id_produk="+id_produk+"&jumlah_order="+1+"&harga_produk="+harga_produk,
+				url		: "order/create_detail_order.php",
+				success: function (result) {
+					console.log(result);					
+				}
+		});	
+
+
 		sub_total = sub_total + parseInt(harga_produk);
 		loadJumlah(sub_total);
 		$("#tbl-pesanan tbody").append(row);
@@ -497,6 +570,26 @@
 				}
 			});
 		}
+	}
+
+	function pay() {
+		// console.log(sub_total);
+		var idOrder = <?php echo $_maxid; ?>;
+		var jumlahBayar = document.getElementById('jumlah_bayar');
+
+		$.ajax({
+				type  	: "POST",
+	      		data  	: "grandtotal="+sub_total+"&id_order="+idOrder,
+				url		: "order/update_orders.php",
+				success: function (result) {
+					console.log(result);
+					window.location.href = 'table.php';					
+				}
+		});	
+
+		// jumlahBayar.value = 0;
+		
+		
 	}
 
 

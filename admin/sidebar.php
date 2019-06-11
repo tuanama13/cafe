@@ -1,7 +1,9 @@
 <?php
+$path = realpath(__DIR__ . '/..');
+include_once($path . '/init/db.php');
 // session_start();
 ob_start();
-include "init/db.php";
+// include "init/db.php";
 // include "admin_login.php";
 // $id = $_SESSION['username'];
 // $level = $_SESSION['level'];
@@ -12,7 +14,7 @@ include "init/db.php";
 <!-- Main Header -->
 <header class="main-header">
   <!-- Logo -->
-  <a href="/tb/index.php" class="logo">
+  <a href="/cafe/admin/index.php" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><b>G</b>B</span>
     <!-- logo for regular state and mobile devices -->
@@ -33,7 +35,7 @@ include "init/db.php";
           <!-- Menu Toggle Button -->
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <!-- The user image in the navbar-->
-            <img src="/tb/dist/img/user2-160x160.png" class="user-image" alt="User Image">
+            <img src="/cafe/dist/img/user2-160x160.png" class="user-image" alt="User Image">
             <!-- hidden-xs hides the username on small devices so only the image appears. -->
             <?php
             // echo "<span class='hidden-xs'>".$result['nama']."</span>";
@@ -44,7 +46,7 @@ include "init/db.php";
           <ul class="dropdown-menu">
             <!-- The user image in the menu -->
             <li class="user-header">
-              <img src="/tb/dist/img/user2-160x160.png" class="img-circle" alt="User Image">
+              <img src="/cafe/dist/img/user2-160x160.png" class="img-circle" alt="User Image">
               <p>
                 <?php
                 // echo "".$result[nama]." - ".$result[jabatan];
@@ -91,7 +93,7 @@ include "init/db.php";
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="/tb/Golden_logo.png" class="img-circle" alt="User Image">
+          <img src="/cafe/admin/Golden_logo.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <h4>Administrator</h4>
@@ -114,7 +116,7 @@ include "init/db.php";
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class=""><a href="/tb/index.php"><i class="fas fa-home"></i> <span>   Dashboard</span></a></li>
+        <li class=""><a href="/cafe/admin/index.php"><i class="fas fa-home"></i> <span>   Dashboard</span></a></li>
         <!-- <li><a href="pembelian/pembelian.php"><i class="fa fa-tags"></i> <span>Pembelian</span></a></li> -->
         <!-- <li><a href="invoice/transaksi.php"><i class="fa fa-tags"></i> <span>Cetak Faktur</span></a></li> -->
         
@@ -127,8 +129,8 @@ include "init/db.php";
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="/tb/karyawan/new_karyawan.php" > <i class="fa fa-plus"></i>Tambah Karyawan</a></li>
-          <li><a href="/tb/karyawan/list_karyawan.php"><i class="fa fa-list"></i>  List Karyawan</a></li>
+          <li><a href="/cafe/admin/karyawan/new_karyawan.php" > <i class="fa fa-plus"></i>Tambah Karyawan</a></li>
+          <li><a href="/cafe/admin/karyawan/list_karyawan.php"><i class="fa fa-list"></i>  List Karyawan</a></li>
         </ul>
       </li>
       <!-- <li class="treeview">
@@ -143,14 +145,14 @@ include "init/db.php";
       </ul>
     </li> -->
     <li class="treeview">
-      <a href=""><i class="fas fa-boxes"></i><span>     Barang</span>
+      <a href=""><i class="fas fa-boxes"></i><span>     Menu</span>
       <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>
     </a>
     <ul class="treeview-menu">
-      <li><a href="/tb/barang/barang.php" > <i class="fa fa-plus"></i>Tambah Barang</a></li>
-      <li><a href="/tb/barang/list_barang.php"><i class="fa fa-list"></i>  List Barang</a></li>
+      <li><a href="/cafe/admin/menu/menu.php" > <i class="fa fa-plus"></i>Tambah Menu</a></li>
+      <li><a href="/cafe/admin/menu/list_menu.php"><i class="fa fa-list"></i>  List Menu</a></li>
     </ul>
   </li>
   <li class="treeview">
@@ -160,8 +162,8 @@ include "init/db.php";
     </span>
   </a>
   <ul class="treeview-menu">
-    <li><a href="/tb/pengeluaran/pengeluaran.php" > <i class="fa fa-plus"></i>Tambah Pengeluaran</a></li>
-    <li><a href="/tb/pengeluaran/list_pengeluaran.php"><i class="fa fa-list"></i>  List Pengeluaran</a></li>
+    <li><a href="/cafe/admin/pengeluaran/pengeluaran.php" > <i class="fa fa-plus"></i>Tambah Pengeluaran</a></li>
+    <li><a href="/cafe/admin/pengeluaran/list_pengeluaran.php"><i class="fa fa-list"></i>  List Pengeluaran</a></li>
   </ul>
 </li>
 <li class="treeview">
@@ -171,8 +173,8 @@ include "init/db.php";
   </span>
 </a>
 <ul class="treeview-menu">
-  <li><a href="/tb/piutang/tambah_piutang.php" > <i class="fa fa-plus"></i>Tambah Pembelian</a></li>
-  <li><a href="/tb/piutang/list_piutang.php"><i class="fa fa-list"></i>List Pembelian</a></li>
+  <li><a href="/cafe/admin/piutang/tambah_piutang.php" > <i class="fa fa-plus"></i>Tambah Pembelian</a></li>
+  <li><a href="/cafe/admin/piutang/list_piutang.php"><i class="fa fa-list"></i>List Pembelian</a></li>
 </ul>
 </li>
 <li class="treeview">
@@ -182,10 +184,10 @@ include "init/db.php";
 </span>
 </a>
 <ul class="treeview-menu">
-<li><a href="/tb/retur/retur.php" > <i class="fa fa-plus"></i>Tambah Retur</a></li>
-<li><a href="/tb/retur/retur_bagus.php" > <i class="fa fa-plus"></i>Tambah Retur Barang Bagus</a></li>
-<li><a href="/tb/retur/list_retur.php" > <i class="fa fa-list"></i>List Retur</a></li>
-<!-- <li><a href="/tb/retur/list_retur.php" > <i class="fa fa-plus"></i>List Retur</a></li> -->
+<li><a href="/cafe/admin/retur/retur.php" > <i class="fa fa-plus"></i>Tambah Retur</a></li>
+<li><a href="/cafe/admin/retur/retur_bagus.php" > <i class="fa fa-plus"></i>Tambah Retur Barang Bagus</a></li>
+<li><a href="/cafe/admin/retur/list_retur.php" > <i class="fa fa-list"></i>List Retur</a></li>
+<!-- <li><a href="/cafe/admin/retur/list_retur.php" > <i class="fa fa-plus"></i>List Retur</a></li> -->
 <!-- <li><a href="../pembelian/list_pembelian.php"><i class="fa fa-list"></i>List Pembelian</a></li> -->
 </ul>
 </li>
@@ -196,8 +198,8 @@ include "init/db.php";
 </span>
 </a>
 <ul class="treeview-menu">
-<li><a href="/tb/karyawan/new_user.php" > <i class="fa fa-plus"></i>Tambah User</a></li>
-<li><a href="/tb/karyawan/list_user.php"><i class="fa fa-list"></i>List User</a></li>
+<li><a href="/cafe/admin/karyawan/new_user.php" > <i class="fa fa-plus"></i>Tambah User</a></li>
+<li><a href="/cafe/admin/karyawan/list_user.php"><i class="fa fa-list"></i>List User</a></li>
 </ul>
 </li>
 <li class="treeview">
@@ -207,12 +209,12 @@ include "init/db.php";
 </span>
 </a>
 <ul class="treeview-menu">
-<li><a href="/tb/laporan/laporan_tahun.php" ><i class="fa fa-file-text"></i>Laporan Penjualan</a></li>
+<li><a href="/cafe/admin/laporan/laporan_tahun.php" ><i class="fa fa-file-text"></i>Laporan Penjualan</a></li>
 
-<!-- <li><a href="/tb/laporan/laporan_karyawan.php"><i class="fa fa-file-o"></i>Laporan Karyawan</a></li> -->
-<li><a href="/tb/laporan/laporan_retur.php"><i class="fa fa-file-text"></i>Laporan Pembelian</a></li>
-<li><a href="/tb/laporan/laporan_pengeluaran.php"><i class="fa fa-file-text"></i>Laporan Pengeluaran</a></li>
-<li><a href="/tb/laporan/laporan_barang_kosong.php"><i class="fa fa-file-text"></i>Laporan Barang Kosong</a></li>
+<!-- <li><a href="/cafe/admin/laporan/laporan_karyawan.php"><i class="fa fa-file-o"></i>Laporan Karyawan</a></li> -->
+<li><a href="/cafe/admin/laporan/laporan_retur.php"><i class="fa fa-file-text"></i>Laporan Pembelian</a></li>
+<li><a href="/cafe/admin/laporan/laporan_pengeluaran.php"><i class="fa fa-file-text"></i>Laporan Pengeluaran</a></li>
+<li><a href="/cafe/admin/laporan/laporan_barang_kosong.php"><i class="fa fa-file-text"></i>Laporan Barang Kosong</a></li>
 </ul>
 </li>
 </ul>
