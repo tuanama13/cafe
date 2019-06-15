@@ -2,13 +2,15 @@
     $path = realpath(__DIR__ . '/..');
     include_once($path . '/init/db.php');
     $path_ = $path . '/init/db.php';
-
     // Koneksi Khusus PDO
     //include_once($path . '/init/db.pdo.php');
     session_start();
     ob_start();
   // include "/init/db.php";
-  
+
+  $page_header = "index";
+  $page_li = "";
+
   require 'functions.php';
   include "header.php";
   include "sidebar.php";

@@ -2,10 +2,18 @@
 session_start();
 //fungsi already header(menangkal warnings)
 ob_start();
-include '../init/db.php';
+
+    $path_ = realpath(__DIR__ . '/../..');
+    include_once($path_ . '/init/db.php');
+// include '../init/db.php';
 // include "../admin_login.php";
-include '../header.php';
-include '../sidebar.php';
+
+// Sidebar
+    $page_header = "laporan";
+    $page_li = "pengeluaran";
+    
+    include '../header.php';
+    include '../sidebar.php';
 // if ($_SESSION['level']=='1') {
 // include '../sidebar.php';
 // }elseif ($_SESSION['level']=='3') {

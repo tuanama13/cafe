@@ -2,21 +2,28 @@
 	session_start();
 	//fungsi already header(menangkal warnings)
 	ob_start();
+	$path = realpath(__DIR__ . '/../..');
+    include_once($path . '/init/db.php');
 	// include (basename(dirname(__FILE__)).'/init/db.php');
 	//echo dirname( __DIR__ ) . '/init/db.php' ;
-	include '../init/db.php';
+	// include '../init/db.php';
 	//include "../admin_login.php";
+	// Sidebar
+    $page_header = "pengeluaran";
+	$page_li = "tambah_penge";
+	
 	include '../header.php';
 	include '../sidebar.php';
 	$date = date("Y-m-d");
 	if (isset($_POST['submit'])) {
 		$tgl_pengeluaran = mysqli_real_escape_string($conn,$_POST['tgl_pengeluaran']);
-
+		$id_user = 1;
+		$logs = 1;
 		$ket_ = mysqli_real_escape_string($conn,$_POST['ket_pengeluaran']);
 		$jumlah_ = str_replace(".", "",mysqli_real_escape_string($conn,$_POST['jumlah_pengeluaran']));			
 			
 		// $insert = "INSERT INTO tbl_pengeluaran(ket_pengeluaran, jumlah_pengeluaran) VALUES ('$ket_','$jumlah_')";
-		$insert = "INSERT INTO tbl_pengeluaran(tgl_pengeluaran,ket_pengeluaran, jumlah_pengeluaran) VALUES ('$tgl_pengeluaran','$ket_','$jumlah_')";
+		$insert = "INSERT INTO tbl_pengeluaran(id_user, tgl_pengeluaran,ket_pengeluaran, jumlah_pengeluaran, logs) VALUES ('$id_user','$tgl_pengeluaran','$ket_','$jumlah_',$logs)";
 		if (mysqli_query($conn,$insert)) {
 			header('Location: list_pengeluaran.php');
 		}

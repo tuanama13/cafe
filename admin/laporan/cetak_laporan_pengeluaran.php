@@ -1,8 +1,10 @@
 <?php
     // header('Content-type: application/pdf');
-    include "../init/db.php";
+    // include "../init/db.php";
+    $path = realpath(__DIR__ . '/../..');
+    include_once($path . '/init/db.php');
     require '../functions.php';
-    require '../plugins/fpdf/fpdf.php';
+    require  $path.'/plugins/fpdf/fpdf.php';
     $tgl_cetak = date("d-m-Y");
     // $id_transaksi = 'INV2018010000001';
 

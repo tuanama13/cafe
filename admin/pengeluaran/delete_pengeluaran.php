@@ -1,5 +1,7 @@
 <?php  
-	include '../init/db.php';
+	$path = realpath(__DIR__ . '/../..');
+    include_once($path . '/init/db.php');
+	// include '../init/db.php';
 //	include "../admin_login.php";
 	
 //	if (isset( $_GET['id'])) {

@@ -1,8 +1,8 @@
 <?php 
   // include '../init/db.php';
-  $path = realpath(__DIR__ . '/../..');
+  $path = realpath(__DIR__ . '/..');
   include_once($path . '/init/db.php');
-  require '../functions.php';
+  require 'functions.php';
   
   // $sql=""; 
 	$kode = isset( $_GET['kode']) ?  $_GET['kode'] : null;
@@ -28,7 +28,8 @@
         <br>  
       </div>
       <div class='col-md-6'>       
-             
+        <strong>Nomor Meja</strong><br>
+        <h1 style='margin-top:5px';>".$row2['no_meja']."</h1> 
       </div>
     </div>
   
@@ -37,29 +38,33 @@
   <table id='tbl_detail' class='table table-striped table-bordered dt-responsive'>	
     <thead>
        <tr>
+         <th style='text-align: center'>No</th>
          <th>Nama Barang</th>
          <th style='text-align: right'>Harga Barang</th>
-         <th>Jumlah Barang</th>
+         <th style='text-align: center'>Qty</th>
          <th style='text-align: right'>Subtotal</th>                   
          </tr>
     </thead>
     <tbody>";                            
    
+    $no = 1;
     while ($row = mysqli_fetch_assoc($sql)) {
                       // $id=$row['id_supplier'];
       $total_ = (int)$row['jumlah_order']*(int)$row['harga_produk'];
   print "          
       <tr>
+          <td style='text-align: center'>$no</td>
           <td>".$row['nama_produk']."</td>
           <td style='text-align: right'>".rupiah($row['harga_produk'])."</td>
-          <td>".$row['jumlah_order']."</td>
+          <td style='text-align: center'>".$row['jumlah_order']."</td>
           <td style='text-align: right'>".rupiah($total_)."</td>         
       </tr>";
-    
-      }            
+        $no++;
+      }
+
     print "
         <tr>
-            <td colspan='3' style='text-align: right'><h4><strong>Total</strong></h4></td>
+            <td colspan='4' style='text-align: right'><h4><strong>Total</strong></h4></td>
             <td style='text-align: right'><h4><strong>".rupiah($row2['grandtotal'])."</strong></h4></td>
         </tr>
       </tbody>

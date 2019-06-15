@@ -1,22 +1,30 @@
 <?php
-session_start();
-//fungsi already header(menangkal warnings)
-ob_start();
-include '../init/db.php';
-// include "../admin_login.php";
-include '../header.php';
-include '../sidebar.php';
-// if ($_SESSION['level']=='1') {
-// include '../sidebar.php';
-// }elseif ($_SESSION['level']=='3') {
-// require '../sidebar_p.php';
-// }
-//$status = $_GET['status'];
-require '../functions.php';
-$path = '../init/db.php';
-$tgl_ =  date("Y-m-d");
-$tahun_ = date("Y");
-$bulan_ = date("m");
+    session_start();
+    //fungsi already header(menangkal warnings)
+    ob_start();
+
+    $path_ = realpath(__DIR__ . '/../..');
+    include_once($path_ . '/init/db.php');
+
+    
+    // Sidebar
+    $page_header = "laporan";
+    $page_li = "penjualan";
+
+
+    include '../header.php';
+    include '../sidebar.php';
+    // if ($_SESSION['level']=='1') {
+    // include '../sidebar.php';
+    // }elseif ($_SESSION['level']=='3') {
+    // require '../sidebar_p.php';
+    // }
+    //$status = $_GET['status'];
+    require '../functions.php';
+    $path = $path_ . '/init/db.php';//'../init/db.php';
+    $tgl_ =  date("Y-m-d");
+    $tahun_ = date("Y");
+    $bulan_ = date("m");
 
 ?>
 <!-- Content Wrapper. Contains page content -->
@@ -52,6 +60,7 @@ $bulan_ = date("m");
             <div class="tab-pane active" id="tab_1">
               <div class="row">
                 <div class="col-md-12">
+                
                   <div class="row">
                     <!-- Option Pilih Kasir -->
                     <div class="col-md-6">
@@ -65,11 +74,11 @@ $bulan_ = date("m");
                     <!-- Tampilkan Pendapatan Bersih total hari ini -->
                     <div class="col-md-3">
                       <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: white; border: none;"><h4>Pendapatan Bersih</h4></div>
                         <div class="panel-body">
-                          <?php                       
+                          <?php 
+                            echo "<h4>Pendapatan Bersih</h4>";                      
                             echo "
-                            <h2>".rupiah(total_harian($tgl_,6,$path))."</h2>";
+                            <h2>".rupiah(total_harian($tgl_,3,$path))."</h2>";
                           ?>
                         </div>
                       </div>
@@ -78,26 +87,10 @@ $bulan_ = date("m");
 
                     <!-- Tampilkan omset hari ini -->
                     <div class="col-md-3">
-                      <div class="panel panel-default" style="margin-right: 15px;">
-                        <div class="panel-heading" style="background-color: white; border: none;"><h4>Omset</h4></div>
-                        <div class="panel-body">
-                        <?php
-                          $sql = "SELECT SUM(grandtotal) AS Total FROM tbl_transaksi WHERE DATE(tanggal) = CURDATE() ";
-                          $run_sql = mysqli_query($conn,$sql);
-                          $rows = mysqli_fetch_assoc($run_sql);
-
-                          if ($rows['Total']==null){
-                            $total_harian = 0;
-                          }else{
-                            $total_harian = (int)$rows['Total'];
-                          }
-                          
-                          echo "<h2>".rupiah($total_harian)."</h2>";
-                        ?>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
+
                   <div class="row">
                     <div class="col-md-6">
                       <button type="button" id="btnLihat" class="lihat btn btn-lg btn-primary left" style="
@@ -105,7 +98,11 @@ $bulan_ = date("m");
                       <button type="button" id="btnCetak" class="pull-right btn btn-lg btn-success">Cetak      <span class="glyphicon glyphicon-print" style="margin-left: 0.5em"></span></button>
                     </div>
                   </div>
+                 
+
+
                   <hr style="margin: 2em" />
+                  <div class="container">
                   <div class="row">
                     <div class="col-md-12" align="center">
                       <h2>Transaksi Hari Ini</h2>
@@ -126,6 +123,9 @@ $bulan_ = date("m");
                       </table>
                     </div>
                   </div>
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ $bulan_ = date("m");
                         <select class="form-control" name="pilih_bulan">
                           <!-- <option value="all">Semua Kasir</option> -->
                           <?php
-                          $sql = "SELECT MONTH(tanggal) AS Bulan FROM tbl_transaksi WHERE YEAR(tanggal)=YEAR(CURDATE()) GROUP BY MONTH(tanggal)";
+                          $sql = "SELECT MONTH(tgl_order) AS Bulan FROM tbl_orders WHERE YEAR(tgl_order)=YEAR(CURDATE()) GROUP BY MONTH(tgl_order)";
                           $run_sql = mysqli_query($conn,$sql);
                           $row_cnt = mysqli_num_rows($run_sql);
                           
@@ -163,55 +163,16 @@ $bulan_ = date("m");
                     <!-- Tampilkan Pendapatan total Bulan ini -->
                     <div class="col-md-3">
                       <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: white; border: none;">
-                          <h4>
-                            <?php
-                            echo "<h4>Pendapatan Bersih ".bulan((int)date("m"))."</h4>";
-                            ?>
-                          </h4>
-                        </div>
                         <div class="panel-body">                          
                           <?php
-                          echo "<h2>".rupiah(total_bulanan($tahun_,$bulan_,6,$path))."</h2>";                        
+                            echo "<h4>Pendapatan Bersih ".bulan((int)date("m"))."</h4>";
+                            echo "<h2>".rupiah(total_bulanan($tahun_,$bulan_,3,$path))."</h2>";                        
                           ?>
                         </div>
                       </div>
                     </div>
                     <!-- / pendapatan -->
-                    <!-- omset -->
-                    <div class="col-md-3">
-                      <div class="panel panel-default">
-                        <?php
-                        $sql = "SELECT SUM(grandtotal) AS Total  FROM tbl_transaksi WHERE MONTH(tanggal) = MONTH(CURDATE())";
-                        $run_sql = mysqli_query($conn, $sql);
-                        $rows = mysqli_fetch_assoc($run_sql);
-
-                        if ($rows['Total']==null){
-                          $total_bulanan = 0;
-                        }else{
-                          $total_bulanan = (int)$rows['Total'];
-                        }
-
-                        // echo "
-                        // <h3>Omset Bulan ".bulan((int)date("m"))."</h3>
-                        // <h1>".rupiah($total_bulanan)."</h1>";
-                        
-                        ?>
-                        <div class="panel-heading" style="background-color: white; border: none;">
-                          <h4>
-                            <?php
-                            echo "<h4>Omset Bulan ".bulan((int)date("m"))."</h4>";
-                            ?>
-                          </h4>
-                        </div>
-                        <div class="panel-body">
-                          <?php
-                            echo "<h2>".rupiah($total_bulanan)."</h2>";
-                          ?>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- / omset -->
+                   
                   </div>
                   <div class="row">
                     <div class="col-md-6">
@@ -237,7 +198,7 @@ $bulan_ = date("m");
                         <select class="form-control" name="pilih_tahun">
                           <!-- <option value="all">Semua Kasir</option> -->
                           <?php
-                          $sql = "SELECT YEAR(tanggal) AS Tahun FROM tbl_transaksi GROUP BY YEAR(tanggal)";
+                          $sql = "SELECT YEAR(tgl_order) AS Tahun FROM tbl_orders GROUP BY YEAR(tgl_order)";
                           $run_sql = mysqli_query($conn,$sql);
                           $row_cnt = mysqli_num_rows($run_sql);
                           
@@ -254,17 +215,20 @@ $bulan_ = date("m");
                       </div>
                     </div>
                     <!-- Tampilkan Pendapatan total Tahun ini -->
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                       <div class="panel panel-default" style="margin-right: 15px;">
                         <div class="panel-body">
                           <?php
                             echo "
                              <h4>Pendapatan Tahun ".$tahun_."</h4>
-                             <h2>".rupiah(total_tahunan($tahun_,6,$path))."</h2>";
+                             <h2>".rupiah(total_tahunan($tahun_,3,$path))."</h2>";
 
                           ?>
                         </div>
                       </div>
+                    </div>
+                    <div class="col-md-3">
+                      
                     </div>
                   </div>
                   <div class="row">
@@ -335,7 +299,7 @@ $bulan_ = date("m");
       }
     });
   });
-  // event lihat transaksi bulanan
+  // event lihat transaksi Harian
   $(document).on('click', '#btnCetak', function (e) {
     var kasir = $("[name='pilih_kasir']").val();
     var waktu = '<?php echo date("Y-m-d") ;?>';

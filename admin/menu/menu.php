@@ -4,7 +4,11 @@
 	ob_start();
 
 	$path = realpath(__DIR__ . '/../..');
-    include_once($path . '/init/db.php');
+	include_once($path . '/init/db.php');
+	
+	// Menu Sidebar
+	$page_header = "menu";
+    $page_li = "tambah_menu";
 	// include (basename(dirname(__FILE__)).'/init/db.php');
 	//echo dirname( __DIR__ ) . '/init/db.php' ;
 	// include '../init/db.php';

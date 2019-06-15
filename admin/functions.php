@@ -78,33 +78,30 @@
 	function total_bulanan($tahun,$bulan,$angka,$path)
 	{
 		include $path;
-		$sql_1 = mysqli_query($conn,"SELECT SUM(total_harga_jual) AS GrandTotal, SUM(diskon) AS Diskon, SUM(total_harga_beli) AS Modal  FROM tbl_transaksi WHERE YEAR(tanggal) ='$tahun' AND MONTH(tanggal) ='$bulan'");
+		$sql_1 = mysqli_query($conn,"SELECT SUM(grandtotal) AS GrandTotal FROM tbl_orders WHERE YEAR(tgl_order) ='$tahun' AND MONTH(tgl_order) ='$bulan'");
 	    $rows_1 = mysqli_fetch_assoc($sql_1);
 
 	    $sql_2 = mysqli_query($conn,"SELECT SUM(jumlah_pengeluaran) AS Total FROM tbl_pengeluaran WHERE YEAR(tgl_pengeluaran) ='$tahun' AND MONTH(tgl_pengeluaran) ='$bulan'");
 	    $rows_2 = mysqli_fetch_assoc($sql_2);
 
-	   $sql_3 = mysqli_query($conn,"SELECT * FROM tbl_retur WHERE YEAR(tgl_faktur) ='$tahun' AND MONTH(tgl_faktur) ='$bulan'");
+	//    $sql_3 = mysqli_query($conn,"SELECT * FROM tbl_retur WHERE YEAR(tgl_faktur) ='$tahun' AND MONTH(tgl_faktur) ='$bulan'");
 	    // $rows_3 = mysqli_fetch_assoc($sql_3);
-	    $total_retur = 0;
-	    while($rows_3 = mysqli_fetch_assoc($sql_3)){
-	        $total_retur = ((int)$rows_3['harga_jual'] * (int)$rows_3['jumlah']) + $total_retur;
-	    }
+	    // $total_retur = 0;
+	    // while($rows_3 = mysqli_fetch_assoc($sql_3)){
+	    //     $total_retur = ((int)$rows_3['harga_jual'] * (int)$rows_3['jumlah']) + $total_retur;
+	    // }
 
 	    $penjualan = (int)$rows_1['GrandTotal'];
-	    $diskon = (int)$rows_1['Diskon'];
-	    $modal = (int)$rows_1['Modal'];
+	    // $diskon = (int)$rows_1['Diskon'];
+	    // $modal = (int)$rows_1['Modal'];
 	    $pengeluaran = (int)$rows_2['Total'];
 	    // $retur = (int)$total_retur;
 
-	    $total_beban = $modal + $pengeluaran + $diskon;
-	    $total = $penjualan - $total_beban ;
+	    // $total_beban = $modal + $pengeluaran + $diskon;
+	    $total = $penjualan - $pengeluaran ;
 
 	    $total_bulanan = array (1 =>   $penjualan,
-			$modal,
-			$diskon,
 			$pengeluaran,
-			$total_beban,
 			$total
 		);
 
@@ -144,7 +141,9 @@
 		// 	$total
 		// );
 
-		$total_harian = array(1 => $penjualan, $pengeluaran, $total);
+		$total_harian = array(1 => $penjualan, 
+								$pengeluaran, 
+								$total);
 
 		return $total_harian[$angka];
 	}

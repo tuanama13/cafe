@@ -1,15 +1,23 @@
 <?php
-session_start();
-//fungsi already header(menangkal warnings)
-ob_start();
-include '../init/db.php';
-require '../functions.php';
-// include "../admin_login.php";
-include '../header.php';
-include '../sidebar.php';
-//$status = $_GET['status'];
-$date = date("Y-m-d");
-$month = date("m");
+    session_start();
+    //fungsi already header(menangkal warnings)
+    ob_start();
+    // include '../init/db.php';
+    $path = realpath(__DIR__ . '/../..');
+    include_once($path . '/init/db.php');
+    
+    // Sidebar Menu
+    $page_header = "pengeluaran";
+    $page_li = "daftar_penge";
+
+
+    require '../functions.php';
+    // include "../admin_login.php";
+    include '../header.php';
+    include '../sidebar.php';
+    //$status = $_GET['status'];
+    $date = date("Y-m-d");
+    $month = date("m");
 
 ?>
 <!-- Content Wrapper. Contains page content -->
@@ -53,26 +61,27 @@ $month = date("m");
             <table id="example" class="table table-striped table-bordered dt-responsive" cellspacing="0" width="100%">
               <thead>
                 <tr>
-                  <!-- <th>Kode Pengeluaran</th> -->
+                  <th style='text-align: center;'>No</th>
                   <th style="text-align: center;">Tanggal Pengeluaran</th>
-                  <th style="text-align: center;">Keterangan Pengeluaran</th>
+                  <th>Keterangan Pengeluaran</th>
                   <th style="text-align: center;">Jumlah Pengeluaran</th>
                   <!-- <th><></th> -->
-                  <th><></th>
+                  <th>Delete</th>
                   <!-- <th colspan="2" style="text-align: center">Action</th> -->
                 </tr>
               </thead>
               <tbody>
                 
                 <?php
+                $no = 1;
                 $sql = "SELECT * FROM tbl_pengeluaran WHERE MONTH(tgl_pengeluaran) = '$month' ORDER BY DATE(tgl_pengeluaran) DESC";
                 $run_sql = mysqli_query($conn,$sql);
                 while($rows = mysqli_fetch_assoc($run_sql)){
                 // $id = $rows['id_brg'];
                 echo "
                 <tr>
-                  
-                  <td>$rows[tgl_pengeluaran]</td>
+                  <td style='text-align: center;'>$no</td>
+                  <td style='text-align: center;'>$rows[tgl_pengeluaran]</td>
                   <td>$rows[ket_pengeluaran]</td>
                   <td style='text-align:right'>".rupiah($rows['jumlah_pengeluaran'])."</td>               
                   
@@ -80,6 +89,7 @@ $month = date("m");
                   <td><a onclick=\"return confirm('Yakin $rows[ket_pengeluaran] diHapus?')\"href='delete_pengeluaran.php?id=$rows[id_pengeluaran]' class='btn btn-danger'><span class='fa fa-times'></span></a></td>
                 </tr>
                 ";
+                $no++;
                 }
                 ?>
               </tbody>
