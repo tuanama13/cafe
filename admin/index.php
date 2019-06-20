@@ -207,7 +207,7 @@
               </table>
             </div>
             <div class="box-footer">
-              <a href="/cafe/admin/laporan/laporan_tahun.php">More Info</a>
+              <a href="/cafe/admin/laporan/laporan_penjualan.php">More Info</a>
             </div>
           </div>
         </div>
@@ -291,9 +291,9 @@
           $run_sql_1 = mysqli_query($conn, $sql_1);
           while ($rows_1 = mysqli_fetch_assoc($run_sql_1)) {
             if (++$counter == $numResults) {
-              echo total_bulanan($year, $rows_1['Bulan_'], 6, $path);
+              echo total_bulanan($year, $rows_1['Bulan_'], 3, $path_);
             } else {
-              echo total_bulanan($year, $rows_1['Bulan_'], 6, $path).
+              echo total_bulanan($year, $rows_1['Bulan_'], 3, $path_).
               ',';
             }
           } ?>

@@ -1,17 +1,19 @@
 <?php
-    include "../init/db.php";
+    // include "../init/db.php";
+    $path_ = realpath(__DIR__ . '/../..');
+    include_once($path_ . '/init/db.php');
     require '../functions.php';
     //include "../admin_login.php";
-    require '../plugins/fpdf/fpdf.php';
+    require $path_.'/plugins/fpdf/fpdf.php';
     $tgl_cetak = date("d-m-Y");
-    $path = '../init/db.php';
+    $path = $path_.'/init/db.php';
     // $id_transaksi = 'INV2018010000001';
 
     $tahun = isset( $_GET['tahun']) ?  $_GET['tahun'] : null;
     // $bulan = isset( $_GET['bulan']) ?  $_GET['bulan'] : null;
     // $tahun = "2018";
     // $bulan = "01";
-    $sql = mysqli_query($conn, "SELECT * FROM tbl_transaksi WHERE YEAR(tanggal) ='$tahun'");
+    $sql = mysqli_query($conn, "SELECT * FROM tbl_orders WHERE YEAR(tgl_order) ='$tahun'");
 
     class PDF extends FPDF
     {
@@ -78,38 +80,17 @@
     $pdf->Cell(40 ,7,'',0,0,'R');
     $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,1,$path)),0,1,'R');
     $pdf->Cell(189 ,5,'',0,1); //dummy
-    
-    $pdf->Cell(10 ,7,'',0,0);
-    $pdf->Cell(89 ,7,'Modal',0,0);
-    $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,2,$path)),0,0,'R');
-    $pdf->Cell(40 ,7,'',0,1,'R');
-
-    $pdf->Cell(10 ,7,'',0,0);
-    $pdf->Cell(89 ,7,'Diskon',0,0);
-    $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,3,$path)),0,0,'R');
-    $pdf->Cell(40 ,7,'',0,1,'R');
-    // $pdf->Cell(189 ,5,'',0,1); //dummy
-
-    // $pdf->Cell(10 ,7,'',0,0);
-    // $pdf->Cell(89 ,7,'Retur',0,0);
-    // $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,4,$path)),0,0,'R');
-    // $pdf->Cell(40 ,7,'',0,1,'R');
 
     $pdf->Cell(10 ,7,'',0,0);
     $pdf->Cell(89 ,7,'Pengeluaran',0,0);
-    $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,4,$path)),0,0,'R');
+    $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,2,$path)),0,0,'R');
     $pdf->Cell(40 ,7,'',0,1,'R');
-
-    $pdf->Cell(10 ,7,'',0,0);
-    $pdf->Cell(89 ,7,'',0,0,'R');
-    $pdf->Cell(40 ,7,'',0,0,'R');
-    $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,5,$path)),0,1,'R');
 
     $pdf->SetFont('Arial','B',12);
     $pdf->Cell(10 ,7,'',0,0);
     $pdf->Cell(129 ,7,'Total',0,0,'R');
     // $pdf->Cell(40 ,7,'',0,0,'R');
-    $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,6,$path)),0,1,'R');
+    $pdf->Cell(40 ,7,rupiah(total_tahunan($tahun,3,$path)),0,1,'R');
 
     $pdf->Output('D','Laporan-Tahunan-'.$tahun.'.pdf','T');
 
