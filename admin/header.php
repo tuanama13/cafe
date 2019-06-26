@@ -24,8 +24,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <link rel="stylesheet" href="/cafe/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/cafe/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/cafe/plugins/fontawesome-5.7.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="/cafe/plugins/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/cafe/plugins/font-awesome/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="/cafe/plugins/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="/cafe/plugins/DataTables1/datatables.min.css">

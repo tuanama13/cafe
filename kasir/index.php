@@ -98,7 +98,7 @@
 								<div class='col-md-3' id='produk-select' class='produk-select' onclick="myPesan('<?php echo $value['id_produk'];?>','<?php echo $value['nama_produk'];?>','<?php echo $value['harga_produk'];?>')">
 									<div class="panel panel-default">
 									<div class="panel-body ">
-										<img src="<?php echo '..'.$value['image_produk']?>" class="img-responsive img-rounded" alt="<?php echo $value['nama_produk']?>" style="width: 100%">
+										<img src="<?php echo '..'.$value['image_produk']?>" class="center img-responsive img-rounded" alt="<?php echo $value['nama_produk']?>" style="width: 100%">
 										<div class="title-menu">
 												<h4 id="nama-produk"><?php echo $value['nama_produk']?></h4>
 												<p id="p-harga" class="p-harga"><?php echo rupiah($value['harga_produk']) ?></p>

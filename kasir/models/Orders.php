@@ -30,7 +30,7 @@
 
         function readOrders()
         {
-            $query = "SELECT * FROM tbl_orders ORDER BY tgl_order DESC LIMIT 5";
+            $query = "SELECT * FROM tbl_orders WHERE grandtotal != 0 ORDER BY tgl_order DESC LIMIT 5";
 
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
@@ -40,7 +40,7 @@
 
         function readOrdersAll()
         {
-            $query = "SELECT * FROM tbl_orders ORDER BY tgl_order DESC";
+            $query = "SELECT * FROM tbl_orders WHERE grandtotal != 0 ORDER BY tgl_order DESC";
 
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
