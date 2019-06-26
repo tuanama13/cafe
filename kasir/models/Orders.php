@@ -38,6 +38,16 @@
             return $stmt;
         }
 
+        function readOrdersAll()
+        {
+            $query = "SELECT * FROM tbl_orders ORDER BY tgl_order DESC";
+
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute();
+
+            return $stmt;
+        }
+
         function createOrder()
         {
             $query = 'INSERT INTO tbl_orders 

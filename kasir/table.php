@@ -23,6 +23,37 @@
 
     
 ?>
+
+<!-- Header Navbar -->
+<nav class="navbar navbar-light bg-green">
+	<!-- <a href="" class="navbar-brand">Navbar</a> -->
+	<div class="container">		
+		<a class="navbar-brand" href="index.php">
+				<!-- <img src="assets/img/ico.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+				Botanical Cafe
+		</a>
+
+		<div class="account pull-right">
+			<!-- <img src="../dist/img/ico_table.svg" id="link_table" style="width: 30px; height: 30px;  margin-right: 20px; fill: white;"> -->
+
+			<img src="../dist/img/ico_coffee.png" class="img-avatar" alt="avatar">
+			<div class="btn-group" style="margin-top:7px;">			
+
+				<button type="button" class="btn btn-default bg-green account-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Antony <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-right" style="margin-top:10px;">
+					<li><a href="#"><i class="fas fa-address-card"></i>Antony Jarot</a></li>
+					<li><a href="#"><i class="fas fa-clock"></i>Member Since 2018</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#"><i class="fas fa-power-off"></i>Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /account -->
+		
+	</div>	
+</nav>
 <div class="container">
     <div class="row">
         <div class="col-md-8">
@@ -30,11 +61,11 @@
             <?php
                 for ($i=1; $i <= $jumlah_meja ; $i++) { 
                     echo "
-                        <div class='col-md-4' onclick='tableOrder(\"$i\")'>
+                        <div class='col-md-3' onclick='tableOrder(\"$i\")'>
                             <div class='panel panel-default'>
-                                <div class='panel-heading text-center'><h3 style='margin:5px;'>".$i."</h3></div>
+                                <div class='panel-heading text-center' style='padding-top:5px;padding-bottom:5px;'><h2 style='margin:5px;'>".$i."</h2></div>
                                 <div class='panel-body text-center'>
-                                    <img src='../dist/img/icon_table_front.png'  alt='table' style='width:120px; height:120px;'>
+                                    <img src='../dist/img/icon_table_front.png'  alt='table' style='width:100px; height:100px;'>
                                 </div>
                                 <!-- /panel body -->
                             </div>
@@ -51,7 +82,10 @@
         <div class="col-md-4">
             <div class='panel panel-default'>
                 <div class="panel-heading">
-                    <h3>Today Transaction</h3>
+                    <div class="row">
+                    <div class="col-md-8"><h4>Today Transaction</h4></div>
+                    <div class="col-md-4"><h5><a href="transaksi.php">See all >></a></h5></div>
+                    </div>
                 </div>
                 <div class='panel-body text-center' style="padding-top : 0px; padding-bottom : 0px;">
                   <?php 

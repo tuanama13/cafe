@@ -42,9 +42,9 @@
 
 
 <!-- Header Navbar -->
-<nav class="navbar navbar-light bg-green">
+<nav class="navbar navbar-light bg-green" style="padding-right:20px;padding-left:20px;">
 	<!-- <a href="" class="navbar-brand">Navbar</a> -->
-	<div class="container">		
+	<!-- <div class="container">		 -->
 		<a class="navbar-brand" href="index.php">
 				<!-- <img src="assets/img/ico.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
 				Botanical Cafe
@@ -69,7 +69,7 @@
 		</div>
 		<!-- /account -->
 		
-	</div>	
+	<!-- </div>	 -->
 </nav>
 
 <div class="">
