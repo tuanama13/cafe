@@ -73,7 +73,7 @@
             <div class="icon">
               <i class="fa fa-money"></i>
             </div>
-            <a href="/cafe/admin/laporan/laporan_tahun.php" class="small-box-footer">
+            <a href="/cafe/admin/laporan/laporan_penjualan.php" class="small-box-footer">
               More info <i class="fa fa-arrow-circle-right"></i>
             </a>
           </div>
@@ -94,7 +94,7 @@
             <div class="icon">
               <i class="fa fa-dollar"></i>
             </div>
-            <a href="/tb/laporan/laporan_tahun.php" class="small-box-footer">
+            <a href="/cafe/admin/laporan/laporan_penjualan.php" class="small-box-footer">
               More info <i class="fa fa-arrow-circle-right"></i>
             </a>
           </div>

@@ -140,15 +140,17 @@ ob_start();
         <!-- /Pengeluaran -->
 
         <!-- User -->
-        <li class="treeview">
-          <a href="#"><i class="fa fa-user"></i> <span> User</span>
+        <li class="treeview <?php if($page_header=="karyawan"){echo "active";} ?>">
+          <a href="#"><i class="fa fa-user"></i> <span> Karyawan</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/cafe/admin/karyawan/new_user.php"> <i class="fa fa-plus"></i>Tambah User</a></li>
-            <li><a href="/cafe/admin/karyawan/list_user.php"><i class="fa fa-list"></i>List User</a></li>
+            <li class='<?php if($page_li=="tambah_karyawan"){echo "active";} ?>'><a href="/cafe/admin/karyawan/new_karyawan.php"> <i class="fa fa-plus"></i>Tambah Karyawan</a></li>
+            <li class='<?php if($page_li=="list_karyawan"){echo "active";} ?>'><a href="/cafe/admin/karyawan/list_karyawan.php"><i class="fa fa-list"></i>List Karyawan</a></li>
+            <li class='<?php if($page_li=="tambah_user"){echo "active";} ?>'><a href="/cafe/admin/karyawan/new_user.php"> <i class="fa fa-plus"></i>Tambah User</a></li>
+            <li class='<?php if($page_li=="list_user"){echo "active";} ?>'><a href="/cafe/admin/karyawan/list_user.php"><i class="fa fa-list"></i>List User</a></li>
           </ul>
         </li>
         <!-- /User -->

@@ -153,12 +153,22 @@
                 $no=1;
                 while($rows = mysqli_fetch_assoc($run_sql)){
                 // $id = $rows['id_brg'];
+                $sql_kat = "SELECT nama_kat FROM tbl_kategori WHERE id_kat='$rows[id_kat]'";
+                $run_sql_kat = mysqli_query($conn,$sql_kat);
+                $rows_kat = mysqli_fetch_assoc($run_sql_kat);
+
                 echo "
                 <tr>
                   <td>".$no."</td>
-                  <td>$rows[id_kat]</td>
+                  <td>$rows_kat[nama_kat]</td>
                   <td>$rows[nama_produk]</td>
-                  <td>$rows[image_produk]</td>
+                  <td> 
+                    <div class='col-xs-6 col-md-3'>
+                      
+                        <img height='80px' width='80px' class='thumbnail' style='margin-bottom:5px;' src='../..$rows[image_produk]' alt='...'>
+                     
+                    </div>
+                  </td>
                   <td style='text-align:right'>".rupiah($rows['harga_produk'])."</td>
                   <td>$rows[status_produk]</td>
                   <td><a href='update_menu.php?id=$rows[id_produk]' class='btn btn-info'><span class='fa fa-pen'></span></a></td>

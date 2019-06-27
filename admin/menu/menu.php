@@ -5,6 +5,13 @@
 
 	$path = realpath(__DIR__ . '/../..');
 	include_once($path . '/init/db.php');
+
+	include_once '../models/Menus.php';
+
+    $database = new Database();
+    $db = $database->connect();
+
+    $menu = new Menu($db);
 	
 	// Menu Sidebar
 	$page_header = "menu";
@@ -19,24 +26,44 @@
 
    	if (isset($_POST['submit'])) {
 
+		$menu->id_kat = $_POST['kategori'];
+        $menu->nama_produk = $_POST['nama_menu'];
+        $menu->desc_produk = $_POST['desc_produk'];
+        // $menu->image_produk = $_FILES['myimage'];
+        $menu->harga_produk = str_replace(".","",$_POST['harga_jual']);
+        $target =  $_FILES['myimage']['name'];
+        $menu->status_produk = 1;
+		$menu->logs = 1;
+		
+		if ($menu->createProduks($target)){
+			// echo "success";
+			header('Location: list_menu.php');
+        }else{
+			// echo "cancel";
+			die(mysqli_error());
+        }
+		// print_r($_POST);
+		// print_r($_FILES);
 		// $kode = mysqli_real_escape_string($conn,$_POST['id_barang']);
-		$nama = mysqli_real_escape_string($conn,$_POST['nama_menu']);
-		$kategori = mysqli_real_escape_string($conn,$_POST['kategori']);
-		$desc_produk = mysqli_real_escape_string($conn,$_POST['desc_produk']);
+		// $nama = mysqli_real_escape_string($conn,$_POST['nama_menu']);
+		// $kategori = mysqli_real_escape_string($conn,$_POST['kategori']);
+		// $desc_produk = mysqli_real_escape_string($conn,$_POST['desc_produk']);
+		// $image_produk = $_FILES['myimage']['name'];
+
 
     	// $harga_beli = str_replace(".", "",mysqli_real_escape_string($conn,$_POST['harga_beli']));
-    	$harga_jual = str_replace(".", "",mysqli_real_escape_string($conn,$_POST['harga_jual']));
+    	// $harga_jual = str_replace(".", "",mysqli_real_escape_string($conn,$_POST['harga_jual']));
 		// $stok = mysqli_real_escape_string($conn,$_POST['stok']);
 		// $sup = mysqli_real_escape_string($conn,$_POST['supplier']);
 
 
-		$insert = "INSERT INTO tbl_produk(id_kat,nama_produk,desc_produk,image_produk, harga_produk,status_produk,logs) VALUES ('$kategori','$nama','$desc_produk','$image_produk','$harga_jual','1','1')";
+		// $insert = "INSERT INTO tbl_produk(id_kat,nama_produk,desc_produk,image_produk, harga_produk,status_produk,logs) VALUES ('$kategori','$nama','$desc_produk','$image_produk','$harga_jual','1','1')";
 
-		if (mysqli_query($conn,$insert)) {
-				header('Location: list_menu.php');
-			}else{
-				echo '<div class="alert alert-danger" style="text-align:center"><h4>Query Bermasalah (Pastikan ID Barang Belum Terdaftar Pada List Barang !!)</h4></div>';
-			}
+		// if (mysqli_query($conn,$insert)) {
+		// 		header('Location: list_menu.php');
+		// 	}else{
+		// 		echo '<div class="alert alert-danger" style="text-align:center"><h4>Query Bermasalah (Pastikan ID Barang Belum Terdaftar Pada List Barang !!)</h4></div>';
+		// 	}
 	}
 
 ?>
@@ -83,7 +110,7 @@ function kode(){
 	            </div>
 	            <!-- /.box-header -->
 	            <div class="box-body pad">
-	              <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+	              <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data">
 		      		
               <!-- <div class="form-group col-md-7">
                       <label for="judul" id="lb">Id Barang</label>
@@ -141,7 +168,23 @@ function kode(){
                   		<label for="harga">Supplier</label>
                   		<input type="text" class="form-control" id="supplier" name="supplier" placeholder="Masukan Nama Supplier" required>
                 	</div> -->
-	      
+	      			<div class="form-group col-md-7">
+					  	<label for="harga">Gambar Menu</label>
+						<div class="input-group">
+							<input type="file" class="btn btn-primary" name="myimage" placeholder="Browse Your Image">
+						</div>
+					</div>
+
+					<!-- <div class="col-xs-6 col-md-3">						
+						<img class="thumbnail" id="img_thumb" src="../Logo2-mini.png" alt="...">						
+					</div> -->
+
+					<div class="form-group col-md-7">
+                  		<label for="desc_produk">Deskripsi Menu</label>
+                  		
+                  			<textarea class="form-control" id="desc_produk" name="desc_produk" placeholder="Masukan Deskripsi Menu" rows="5" required ></textarea>
+                	</div>
+
 	                <div class="box-footer col-md-7">
                			<button type="submit" class="btn btn-primary" name="submit">Submit</button>
               	    </div>
