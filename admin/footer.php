@@ -5,7 +5,7 @@
       <!-- Template by: AdminLTE2 Team -->
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; <?php echo date("Y"); ?><a href=""> Golden Bangunan</a></strong> All rights reserved.
+    <strong>Copyright &copy; <?php echo date("Y"); ?><a href=""> Inland Cafe</a></strong> All rights reserved.
  </footer>
 <!-- ./wrapper -->
 <!-- Optionally, you can add Slimscroll and FastClick plugins.

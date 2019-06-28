@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Golden Bangunan | Admin</title>
+    <title>Inland Cafe | Admin</title>
     <link rel="icon" href="/cafe/favicon.ico">
     <!-- <base href="admin/"> -->
     <!-- Tell the browser to be responsive to screen width -->

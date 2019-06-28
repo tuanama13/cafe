@@ -16,9 +16,9 @@ ob_start();
   <!-- Logo -->
   <a href="/cafe/admin/index.php" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>G</b>B</span>
+    <span class="logo-mini"><b>I</b>C</span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Golden Bangunan</b></span>
+    <span class="logo-lg"><b>Inland Cafe</b></span>
   </a>
   <!-- Header Navbar -->
   <nav class="navbar navbar-static-top" role="navigation">
@@ -39,7 +39,7 @@ ob_start();
             <!-- hidden-xs hides the username on small devices so only the image appears. -->
             <?php
             // echo "<span class='hidden-xs'>".$result['nama']."</span>";
-            echo "<span class='hidden-xs'>Golden Bangunan</span>";
+            echo "<span class='hidden-xs'>Inland Cafe</span>";
             ?>
             <!-- <span class="hidden-xs">Alexander Pierce</span> -->
           </a>
@@ -51,7 +51,7 @@ ob_start();
                 <?php
                 // echo "".$result[nama]." - ".$result[jabatan];
                 // echo "".$result['nama']." - ".$result['level'];
-                echo "<span class='hidden-xs'>Golden Bangunan</span>";
+                echo "<span class='hidden-xs'>Inland cafe</span>";
                 ?>
                
               </p>

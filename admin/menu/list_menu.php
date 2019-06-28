@@ -52,7 +52,7 @@
             <!-- <small>List Barang-Barang yang Sudah Dimasukan</small> -->
             </h1>
             <a href="menu.php" class="btn btn-info pull-right"><i class="fa fa-plus"></i> Tambah Menu <small>( Shift + X )</small></a>
-            <a href="../laporan/cetak_laporan_barang.php" class="btn btn-success pull-right"  style="margin-right: 5px"><i class="fa fa-print"></i> Cetak</a>
+            <!-- <a href="../laporan/cetak_laporan_barang.php" class="btn btn-success pull-right"  style="margin-right: 5px"><i class="fa fa-print"></i> Cetak</a> -->
           </div>
           
           <!-- Jumlah Aset -->
@@ -136,10 +136,10 @@
                   <th>No</th>
                   <!-- <th>Kode Menu</th> -->
                   <th>Kategori Menu</th>
-                  <th>Nama Produk</th>
+                  <th>Nama Menu</th>
                   <th>Gambar Menu</th>
                   <th>Harga</th>
-                  <th>Status Produk</th>
+                  <th>Status Menu</th>
                   <th>Edit</th>
                   <th>Delete</th>
                   <!-- <th colspan="2" style="text-align: center">Action</th> -->
@@ -156,6 +156,12 @@
                 $sql_kat = "SELECT nama_kat FROM tbl_kategori WHERE id_kat='$rows[id_kat]'";
                 $run_sql_kat = mysqli_query($conn,$sql_kat);
                 $rows_kat = mysqli_fetch_assoc($run_sql_kat);
+                $stat = "";
+                if ($rows['status_produk']=='1') {
+                    $stat =  'Menu Tersedia';
+                } else {
+                     $stat =  'Menu Tidak Tersedia';
+                }
 
                 echo "
                 <tr>
@@ -170,7 +176,7 @@
                     </div>
                   </td>
                   <td style='text-align:right'>".rupiah($rows['harga_produk'])."</td>
-                  <td>$rows[status_produk]</td>
+                  <td>".$stat."</td>
                   <td><a href='update_menu.php?id=$rows[id_produk]' class='btn btn-info'><span class='fa fa-pen'></span></a></td>
                   <td><a onclick=\"return confirm('Yakin $rows[nama_produk] diHapus?')\"href='delete_menu.php?id=$rows[id_produk]' class='btn btn-danger'><span class='fa fa-times'></span></a></td>
                 </tr>
@@ -207,7 +213,7 @@
 
   shortcut.add("Shift+X",function() {
     // alert("Hi there!");
-    window.location.href ="/tb/barang/barang.php";
+    window.location.href ="/cafe/admin/menu/menu.php";
   });
   
   $('#myModal').on('shown.bs.modal', function () {
