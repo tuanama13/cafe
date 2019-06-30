@@ -1,8 +1,25 @@
 <?php
-$path = realpath(__DIR__ . '/..');
-include_once($path . '/init/db.php');
-// session_start();
-ob_start();
+  // $path = realpath(__DIR__ . '/..');
+  // include_once($path . '/init/db.php');
+  // session_start();
+  // ob_start();
+  if(empty($_SESSION)){
+    header('Location:../index.php');
+  }else {
+    if ($_SESSION['role_user']!='Admin') {
+       header('Location:../index.php');
+    }
+  }
+
+  include_once 'models/Karyawans.php';
+  $database = new Database();
+  $db = $database->connect();
+
+  $peg = new Karyawan($db);
+  $result = $peg->readKaryawan($_SESSION['id_peg']);
+
+  $row = $result->fetch(PDO::FETCH_ASSOC); 
+
 // include "init/db.php";
 // include "admin_login.php";
 // $id = $_SESSION['username'];
@@ -39,7 +56,7 @@ ob_start();
             <!-- hidden-xs hides the username on small devices so only the image appears. -->
             <?php
             // echo "<span class='hidden-xs'>".$result['nama']."</span>";
-            echo "<span class='hidden-xs'>Inland Cafe</span>";
+            echo "<span class='hidden-xs'>".$row['nama_pegawai']."</span>";
             ?>
             <!-- <span class="hidden-xs">Alexander Pierce</span> -->
           </a>
@@ -51,7 +68,7 @@ ob_start();
                 <?php
                 // echo "".$result[nama]." - ".$result[jabatan];
                 // echo "".$result['nama']." - ".$result['level'];
-                echo "<span class='hidden-xs'>Inland cafe</span>";
+                echo "<span class='hidden-xs'>".$row['nama_pegawai']."</span>";
                 ?>
                
               </p>
@@ -73,9 +90,9 @@ ob_start();
               <!-- </li> -->
               <!-- Menu Footer-->
               <li class="user-footer">
-                <!-- <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div> -->
+                <div class="pull-left">
+                  <a href="/cafe/logout.php" class="btn btn-default btn-flat"><label>Logout</label></a>
+                </div>
                 <div class="pull-right">
                   
                 </div>

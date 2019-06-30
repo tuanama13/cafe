@@ -1,4 +1,7 @@
 <?php
+    header_remove();
+    ob_start();
+    // session_start();
     $path = realpath(__DIR__ . '/..');
     // include_once($path . '/init/db.pdo.php');
     include_once($path . '/init/db.pdo.php');
@@ -6,6 +9,19 @@
     include_once 'models/Cabangs.php';
     include_once 'models/Orders.php';
     include_once 'functions.php';
+    // include_once 'cek.php';
+
+    // if(empty($_SESSION)){
+	// 	header('Location:../index.php');
+	// }else {
+	// 	if ($_SESSION['role_user']!='Kasir') {
+	// 	    header('Location:../index.php');
+	// 	    // header_remove("Location: table.php"); 
+    //     }
+    // }
+
+
+
     include_once 'navbar.php';
 
     $database = new Database();

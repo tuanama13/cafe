@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     $path = realpath(__DIR__ . '/..');
     // include_once($path . '/init/db.pdo.php');
     include_once($path . '/init/db.pdo.php');

@@ -7,13 +7,18 @@
 	include_once($path . '/init/db.pdo.php');
 	include_once 'models/Orders.php';
 	include('functions.php');
+	// include_once 'cek.php';
 	include_once 'navbar.php';
 
-	if (empty($_GET['table'])) {
-		header("Location: table.php");
-	}else {
-		$table = $_GET['table'];
-	}
+	
+			if (empty($_GET['table'])) {
+				header("Location: table.php");
+			} else {
+				$table = $_GET['table'];
+			}
+
+
+	
 
 	// id cabang
 	$id_cabang_ = 1;
@@ -293,9 +298,10 @@
 	var txt_jumlahBayar = document.getElementById("jumlah_bayar");
 	var txt_bayar = document.getElementById("txtBayar");
 	var txt_kembali = document.getElementById("txtKembalian");
+	var btnBayar = document.getElementById("btn_pay");
 
 	$(document).ready(function(){
-			// loadJumlah();
+		cek();
 	});
 
 	$('#exampleModal').on('shown.bs.modal', function () {
@@ -367,6 +373,14 @@
 			jumlahBayar = '0';
 		}
 
+		var btnPayFinal = document.getElementById('btn_pay_final');
+
+		if (jumlahBayar.val < sub_total) {
+			btnPayFinal.disabled = true;
+		}else{
+			btnPayFinal.disabled = false;
+		}
+
 		txt_jumlahBayar.value = formatRupiah(jumlahBayar,"");
 		txt_bayar.innerHTML = "Rp "+formatRupiah(jumlahBayar,"");
 		txt_kembali.innerHTML = "Rp "+formatRupiah((jumlahBayar - sub_total).toString(),"");
@@ -398,6 +412,14 @@
 
 	}
 
+	function cek(){
+		if (sub_total == 0) {
+			btnBayar.disabled = true;
+		} else {
+			btnBayar.disabled = false;
+		}
+	}
+
 
 	function tambah(rowid, harga_produk, id_produk) {
 		// console.log(rowid);
@@ -422,7 +444,7 @@
 		sub_total = sub_total + harga_produk;
 		// console.log(sub_total);		
 		document.getElementById('jumlah'+rowid).innerHTML = qty;
-
+		cek();
 		loadJumlah(sub_total);
 	}
 
@@ -451,7 +473,9 @@
 				}
 			});
 		
-		loadJumlah(sub_total);	
+		cek();
+		loadJumlah(sub_total);
+
 	}
 
 	function myPesan(id_produk, nama_produk, harga_produk) {
@@ -490,6 +514,8 @@
 		sub_total = sub_total + parseInt(harga_produk);
 		loadJumlah(sub_total);
 		$("#tbl-pesanan tbody").append(row);
+		// btnBayar.disabled = false;
+		cek();
 
 		rowid = rowid + 1;
 	}
@@ -499,8 +525,10 @@
 		var total = parseInt(qty)*harga_produk;
 		sub_total = sub_total - total;
 
+		cek();
 		loadJumlah(sub_total);
 		$('#'+rowid).remove();
+
 		
 	}
 
@@ -548,6 +576,7 @@
 		// console.log(sub_total);
 		var idOrder = <?php echo $_maxid; ?>;
 		var jumlahBayar = document.getElementById('jumlah_bayar');
+		
 
 		$.ajax({
 				type  	: "POST",

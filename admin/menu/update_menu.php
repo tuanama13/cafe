@@ -143,11 +143,11 @@
   									placeholder="Masukan Deskripsi Menu" rows="5"  required><?php echo "$rows[desc_produk]";?></textarea>
   							</div>
   					</div>
-  					<div class="box-footer col-md-7">
+  					<div class="box-footer">
   						<button type="submit" class="btn btn-primary" name="submit">Submit</button>
   					</div>
   					</form>
-  				</div>
+  				
   			</div>
   			<!-- /.box -->
   		</div>

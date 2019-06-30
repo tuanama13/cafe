@@ -33,10 +33,10 @@
 
         function readJumMeja($id_cabang)
         {
-            $query = "SELECT jumlah_meja FROM tbl_cabang WHERE id_cabang = $id_cabang";
+            $query = "SELECT jumlah_meja FROM tbl_cabang WHERE id_cabang = :id_cabang";
 
             $stmt = $this->conn->prepare($query);
-            $stmt->execute();
+            $stmt->execute(array('id_cabang' => $id_cabang));
 
             return $stmt;
         }
