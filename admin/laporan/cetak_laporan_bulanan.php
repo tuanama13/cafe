@@ -31,10 +31,10 @@
             $this->Image('../Golden_logo-mini.png',25,6,23,20);
             // Title
             $this->SetFont('Arial','B',30);
-            $this->Cell(161,10,'Golden Bangunan',0,1,'C');
+            $this->Cell(161,10,'Inland Cafe',0,1,'C');
             $this->SetFont('Arial','',12);
             $this->Cell(20);
-            $this->Cell(161,10,'Jl. Tanjung Raya 2 (Parit Mayor ) No. 11, Telp : 0813-4858-2358',0,1,'C');
+            $this->Cell(161,10,'Jl. Siam, Pontianak',0,1,'C');
             // $this->Ln(7);
             $this->SetLineWidth(1.7);
             $this->Line(10, 32, 198, 32);

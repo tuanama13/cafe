@@ -211,56 +211,6 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <div class="box-title">Barang Hampir Kosong</div>
-            </div>
-            <div class="box-body">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>ID Barang</th>
-                    <th>Nama Barang</th>
-                    <th>Satuan</th>
-                    <th>Harga Beli</th>
-                    <th>Harga Jual</th>
-                    <th>Jumlah Barang</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <?php
-                $sql = "SELECT * FROM tbl_brg WHERE stok <= 10 ORDER BY stok ASC LIMIT 5";
-                $run_sql = mysqli_query($conn,$sql);
-                $row_cnt = mysqli_num_rows($run_sql);
-                if ($row_cnt <= 0) {
-                echo "<tr><td colspan='6' align ='center'>Barang Kosong Tidak Ditemukan</td></tr>";
-                }else{
-                while($rows = mysqli_fetch_assoc($run_sql)){
-                echo "
-                <tr>
-                  <td>$rows[id_barang]</td>
-                  <td>$rows[nama_barang]</td>
-                  
-                  <td>$rows[satuan]</td>
-                  <td>$rows[harga_beli]</td>
-                  <td>$rows[harga_jual]</td>";
-                  if ($rows['stok'] <= 5) {
-                  echo "<td><span class='label label-danger'>$rows[stok]</span></td>";
-                  }
-                echo "</tr>";
-                }
-                }
-                ?>
-                </tbody>
-              </table>
-            </div>
-            <div class="box-footer">
-              <a href="/tb/laporan/laporan_barang_kosong.php">More Info</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>

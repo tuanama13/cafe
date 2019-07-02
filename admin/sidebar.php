@@ -166,27 +166,27 @@
           <ul class="treeview-menu">
             <li class='<?php if($page_li=="tambah_karyawan"){echo "active";} ?>'><a href="/cafe/admin/karyawan/new_karyawan.php"> <i class="fa fa-plus"></i>Tambah Karyawan</a></li>
             <li class='<?php if($page_li=="list_karyawan"){echo "active";} ?>'><a href="/cafe/admin/karyawan/list_karyawan.php"><i class="fa fa-list"></i>List Karyawan</a></li>
-            <li class='<?php if($page_li=="tambah_user"){echo "active";} ?>'><a href="/cafe/admin/karyawan/new_user.php"> <i class="fa fa-plus"></i>Tambah User</a></li>
-            <li class='<?php if($page_li=="list_user"){echo "active";} ?>'><a href="/cafe/admin/karyawan/list_user.php"><i class="fa fa-list"></i>List User</a></li>
+            <li class='<?php if($page_li=="tambah_user"){echo "active";} ?>'><a href="/cafe/admin/karyawan/new_user.php"> <i class="fa fa-user-plus"></i>Tambah User</a></li>
+            <li class='<?php if($page_li=="list_user"){echo "active";} ?>'><a href="/cafe/admin/karyawan/list_user.php"><i class="fa fa-address-card"></i>List User</a></li>
           </ul>
         </li>
         <!-- /User -->
 
         <!-- Laporan -->
         <li class='treeview <?php if($page_header=="laporan"){echo "active";} ?>'>
-          <a href="#"><i class="fa fa-folder-open"></i>Laporan
+          <a href="#"><i class="fa fa-folder-open"></i><span> Laporan</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class='<?php if($page_li=="penjualan"){echo "active";} ?>' ><a href="/cafe/admin/laporan/laporan_penjualan.php"><i class="fa fa-file-text"></i>Laporan Penjualan</a>
+            <li class='<?php if($page_li=="penjualan"){echo "active";} ?>' ><a href="/cafe/admin/laporan/laporan_penjualan.php"><i class="fa fa-file"></i>Laporan Penjualan</a>
             </li>
 
             <!-- <li><a href="/cafe/admin/laporan/laporan_karyawan.php"><i class="fa fa-file-o"></i>Laporan Karyawan</a></li> -->
             <!-- <li><a href="/cafe/admin/laporan/laporan_retur.php"><i class="fa fa-file-text"></i>Laporan Pembelian</a> -->
             <!-- </li> -->
-            <li  class='<?php if($page_li=="pengeluaran"){echo "active";} ?>'><a href="/cafe/admin/laporan/laporan_pengeluaran.php"><i class="fa fa-file-text"></i>Laporan
+            <li  class='<?php if($page_li=="pengeluaran"){echo "active";} ?>'><a href="/cafe/admin/laporan/laporan_pengeluaran.php"><i class="fa fa-file"></i>Laporan
                 Pengeluaran</a>
             </li>
             <!-- <li><a href="/cafe/admin/laporan/laporan_barang_kosong.php"><i class="fa fa-file-text"></i>Laporan Barang

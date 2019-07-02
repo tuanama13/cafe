@@ -38,10 +38,10 @@
             $this->SetFont('Arial','B',30);
             $this->Cell(5);
             // Cell(float w [, float h [, string txt [, mixed border [, int ln [, string align [, boolean fill [, mixed link]]]]]]])
-            $this->Cell(230,10,'Golden Bangunan',0,1,'L');
+            $this->Cell(230,10,'Inland Cafe',0,1,'L');
             $this->SetFont('Arial','',12);
             $this->Cell(25);
-            $this->Cell(230,10,'Jl. Tanjung Raya 2 (Parit Mayor ) No. 11, Telp : 0813-4858-2358',0,1,'L');
+            $this->Cell(230,10,'Jl. Siam, Pontianak',0,1,'L');
             // $this->Ln(7);
             $this->SetLineWidth(1.7);
             $this->Line(10, 32, 286, 32);
