@@ -171,7 +171,7 @@ function kode(){
 	      			<div class="form-group col-md-7">
 					  	<label for="harga">Gambar Menu</label>
 						<div class="input-group">
-							<input type="file" class="btn btn-primary" name="myimage" placeholder="Browse Your Image">
+							<input type="file" class="btn btn-primary" name="myimage" placeholder="Browse Your Image" required>
 						</div>
 					</div>
 

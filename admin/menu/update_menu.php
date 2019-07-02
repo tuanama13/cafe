@@ -11,7 +11,9 @@
     $database = new Database();
     $db = $database->connect();
 
-    $menu = new Menu($db);
+	$menu = new Menu($db);
+	
+	$result_kat = $menu->readKategori();
 	
 	// Menu Sidebar
 	$page_header = "menu";
@@ -27,35 +29,52 @@
     	header('Location: list_menu.php');
   	}
 
-	if (isset($_POST['submit'])) {
-
-// 		$nama = mysqli_real_escape_string($conn,$_POST['nama_barang']);
-// 		$satuan = mysqli_real_escape_string($conn, $_POST['satuan']);
-//     	$harga_beli = mysqli_real_escape_string($conn,$_POST['harga_beli']);
-//     	$harga_jual = mysqli_real_escape_string($conn,$_POST['harga_jual']);
-// 		$stok = mysqli_real_escape_string($conn,$_POST['stok']);
-// 		$tambahan=mysqli_real_escape_string($conn,$_POST['tambah_jumlah_barang']);
-// 		$tambah_stok=((int)$stok+(int)$tambahan);
-
-// 		$sup = mysqli_real_escape_string($conn,$_POST['supplier']);
-// $id_brg = mysqli_real_escape_string($conn,$_POST['id_barang']);
-
-// 	   $query = "UPDATE tbl_brg SET id_barang = '$id_brg', nama_barang = '$nama', satuan ='$satuan', harga_beli = '$harga_beli',harga_jual = '$harga_jual', stok = '$tambah_stok', supplier = '$sup' WHERE id_barang = '$id'";
-
-
-// 	   // UPDATE `list_brg` SET `nama_brg` = 'sada' WHERE `list_brg`.`id_brg` = 232640912;
-
-// 	   if(mysqli_query($conn,$query)){
-// 	   		header('Location: list_barang.php?status=sukses');
-// 	   }else{
-// 	   		echo '<div class="alert alert-danger" style="text-align:center"><h4>Query bermasalah</h4></div>';
-// 	   }
-	  
-	}
+	
 
 	// echo $_GET['id'];
 	$query = mysqli_query($conn,"SELECT * FROM tbl_produk a JOIN tbl_kategori b USING (id_kat) WHERE a.id_produk='$id'");
 	$rows = mysqli_fetch_assoc($query);
+
+	// Kategori
+	$query_kat = mysqli_query($conn,"SELECT * FROM tbl_kategori");
+	$rows_kat = mysqli_fetch_assoc($query_kat);
+
+	if (isset($_POST['submit'])) {
+		$menu->id_kat = $_POST['kategori'];
+        $menu->nama_produk = $_POST['nama_menu'];
+        $menu->desc_produk = $_POST['desc_produk'];
+        // $menu->image_produk = $_FILES['myimage'];
+        $menu->harga_produk = str_replace(".","",$_POST['harga_jual']);
+        
+        $menu->status_produk = $_POST['status_menu'];
+		$menu->logs = 1;
+		$menu->id_produk = $id;
+
+		if (empty($_FILES['myimage']['name'])) {
+			$menu->image_produk = $rows['image_produk'];
+			// $target =  $_FILES['myimage']['name'];
+			
+			if ($menu->updateProduksKos()){
+			// echo "success";
+				header('Location: list_menu.php');
+			}else{
+				// echo "cancel";
+				die(mysqli_error());
+			}
+			// echo "...................................................................kosong";
+		}else {
+			$target =  $_FILES['myimage']['name'];
+			if ($menu->updateProduks($target)){
+			// echo "success";
+				header('Location: list_menu.php');
+			}else{
+				// echo "cancel";
+				die(mysqli_error());
+			}
+			// echo ".....................................................................ndak";
+		}
+	  
+	}
 ?>
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -97,15 +116,23 @@
   							<div class="form-group col-md-4">
   								<label for="kategori">Kategori</label>
 								 
-  								<!--<select id="satuan" name="satuan" class="form-control" required >
-							<option value="PCS">PCS</option>
-							<option value="KG">KG</option>
-							<option value="BTG">BTG</option>
-							<option value="SAK">SAK</option>
-							<option value="ROLL">ROLL</option>
-							<option value="M">M</option>
-							<option value="SET">SET</option>
-						</select> -->
+  								<select id="kategori" name="kategori" class="form-control">
+								
+								<?php
+									foreach ($result_kat as $value_kat) {
+										if ($rows['id_kat']==$value_kat['id_kat']) {
+											$select = "selected";
+										}else {
+											$select = '';
+										}
+										echo"
+											<option ".$select." value='".$value_kat['id_kat']."'>".$value_kat['nama_kat']."</option>
+										";
+									}
+								?>
+
+							 <!-- <option value="PCS">PCS</option> --> -->
+								</select>
   								<!-- <div id="kategori">
 
   								</div> -->
@@ -142,6 +169,15 @@
   								<textarea class="form-control" id="desc_produk" name="desc_produk"
   									placeholder="Masukan Deskripsi Menu" rows="5"  required><?php echo "$rows[desc_produk]";?></textarea>
   							</div>
+
+							<div class="form-group col-md-3">
+								<label for="desc_produk">Status Menu</label>
+									<select id="status_menu" name="status_menu" class="form-control">
+								<option <?php if ($rows['status_produk']== 1) echo 'selected' ?> value='1'>Tersedia</option>
+								<option <?php if ($rows['status_produk']== 0) echo 'selected' ?> value='0'>Tidak Tersedia</option>
+							
+								</select>
+							</div>
   					</div>
   					<div class="box-footer">
   						<button type="submit" class="btn btn-primary" name="submit">Submit</button>
@@ -173,7 +209,7 @@
 
 
 		$(document).ready(function(){
-			$("#kategori").load("load_kategori.php");
+			// $("#kategori").load("load_kategori.php");
 		});
 
 		$('#exampleModal').on('shown.bs.modal', function () {

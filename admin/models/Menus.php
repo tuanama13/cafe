@@ -255,9 +255,9 @@
                         printf("Error: %s.\n", $stmt->execute());
             
                         return false;
-	    				$sql = "INSERT INTO images (image) VALUES('$imagePath')";
-	    				$stmt = $this->conn->prepare($sql);
-			            $stmt->execute();
+	    				// $sql = "INSERT INTO images (image) VALUES('$imagePath')";
+	    				// $stmt = $this->conn->prepare($sql);
+			            // $stmt->execute();
 
 			//             // echo "Insert Image Succeesful";
 	    	// 			// echo "<br>";
@@ -275,5 +275,61 @@
 
             
             
-        }
+		}
+
+		function updateProduksKos(){
+			
+
+                        $query = 'UPDATE tbl_produk 
+                            SET 
+								id_kat = :id_kat,
+								nama_produk = :nama_produk,
+								desc_produk = :desc_produk,
+								image_produk = :image_produk,
+								harga_produk = :harga_produk,
+								status_produk = :status_produk,
+								logs = :logs
+							WHERE
+								id_produk=:id_produk';
+                    
+                        $stmt = $this->conn->prepare($query);
+
+                        //Clean Data
+                        $this->id_kat = htmlspecialchars(strip_tags($this->id_kat));
+                        $this->nama_produk = htmlspecialchars(strip_tags($this->nama_produk));
+                        $this->desc_produk = htmlspecialchars(strip_tags($this->desc_produk));
+                        $this->image_produk = htmlspecialchars(strip_tags($this->image_produk));
+                        $this->harga_produk = htmlspecialchars(strip_tags($this->harga_produk));
+                        $this->status_produk = htmlspecialchars(strip_tags($this->status_produk));
+						$this->logs = htmlspecialchars(strip_tags($this->logs));
+						$this->id_produk = htmlspecialchars(strip_tags($this->id_produk));
+
+                        //Bind Param
+                        $stmt->bindParam(':id_kat',$this->id_kat);
+                        $stmt->bindParam(':nama_produk',$this->nama_produk);
+                        $stmt->bindParam(':desc_produk',$this->desc_produk);
+                        $stmt->bindParam(':image_produk',$this->image_produk);
+                        $stmt->bindParam(':harga_produk',$this->harga_produk);
+                        $stmt->bindParam(':status_produk',$this->status_produk);
+						$stmt->bindParam(':logs',$this->logs);						
+						$stmt->bindParam(':id_produk',$this->id_produk);
+
+                        if ($stmt->execute()) {
+                            return true;
+                        }
+                        
+                        printf("Error: %s.\n", $stmt->execute());
+            
+                            
+            
+		}
+		
+		public function readKategori()
+		{
+			$query = "SELECT * FROM tbl_kategori";
+			$stmt = $this->conn->prepare($query);
+            $stmt->execute(array());
+
+            return $stmt;
+		}
     }
