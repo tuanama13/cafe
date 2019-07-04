@@ -46,9 +46,6 @@
 
 ?>
 
-
-
-
 <div class="">
 	<div class="row" style="margin-left: 10px; margin-right: 10px;">
 		<!-- col-8 -->
@@ -357,14 +354,10 @@
 	// fungsi untuk hitung total
 	function loadJumlah(subtotal) {
 		var subtotal_ = "Rp "+formatRupiah(subtotal.toString() ,"");
-		// if (typeof subtotal == "string") {
-		// 	document.getElementById('total_pesan').innerHTML = subtotal;
-		// document.getElementById('txtTotal').innerHTML = subtotal;
-		// } else {
+
 			document.getElementById('total_pesan').innerHTML = subtotal_;
-		document.getElementById('txtTotal').innerHTML = subtotal_;	
-		// }
-		// console.log(typeof subtotal);
+			document.getElementById('txtTotal').innerHTML = subtotal_;	
+		
 	}
 
 
@@ -390,15 +383,8 @@
 
 	function delCalc() {
 		var new_jumlah_bayar_ = jumlah_bayar_[jumlah_bayar_.length - 1];
-
 		var jumlah_bayar_new = jumlah_bayar_.replace(new_jumlah_bayar_,"");
-		// // console.log(jumlah_bayar_);
-		// // console.log();
 
-		// txt_jumlahBayar.value = formatRupiah(jumlah_bayar_new,"")
-
-		// jumlah_bayar_=jumlah_bayar_new;
-		// console.log(jumlah_bayar_.length);
 		if (jumlah_bayar_.length==1) {
 			txt_jumlahBayar.value = 0;
 			jumlah_bayar_="";
@@ -590,39 +576,9 @@
 				url		: "order/update_orders.php",
 				success: function (result) {
 					console.log(result);
-
-					link(idOrder,jumlah_bayar_new_,kembali);
-					
-					// setTimeout(function () {				
-					// 	window.location.href = 'table.php';
-					// }, 3000);
-							
-						
-										
+					link(idOrder,jumlah_bayar_new_,kembali);				
 				}
-		});
-
-
-
-		
-
-		// setInterval(function(){
-		// 				window.location.href = 'table.php';		
-		// 			}, 2000);
-		// window.location.href = 'table.php';	
-		// $.ajax({
-		// 		type  	: "POST",
-	    //   		data  	: "id_order="+idOrder+"&bayar="+jumlahBayar+"&kembali="+kembali,
-		// 		url		: "order/cetak_order.php",
-		// 		success: function (result) {
-		// 			console.log(result);
-					
-		// 		}
-		// });	
-
-		// jumlahBayar.value = 0;
-		
-		
+		});	
 	}
 
 	// setInterval(pay(), 3000);
@@ -632,7 +588,5 @@
 						window.location.href = 'table.php';
 					}, 3000);
 	}
-
-
 
 </script>
