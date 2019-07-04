@@ -27,9 +27,12 @@
         <br>
         <br>  
       </div>
-      <div class='col-md-6'>       
+      <div class='col-md-3'>       
         <strong>Nomor Meja</strong><br>
         <h1 style='margin-top:5px';>".$row2['no_meja']."</h1> 
+      </div>
+      <div class='col-md-3'>       
+        <a href='order/cetak_order_1.php?id_order=".$row2['id_order']."' class='btn btn-success'><i class='fa fa-print'></i> <label>Cetak</label></a>
       </div>
     </div>
   

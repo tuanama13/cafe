@@ -48,6 +48,26 @@
             return $stmt;
         }
 
+        function readDetailOrders($id)
+        {
+            $query = "SELECT * FROM tbl_detail_order INNER JOIN tbl_produk USING(id_produk) WHERE id_order='$id'";
+
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute();
+
+            return $stmt;
+        }
+
+        function cetakOrders($id)
+        {
+            $query = "SELECT * FROM tbl_orders INNER JOIN tbl_user USING(id_user) WHERE id_order='$id'";
+
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute();
+
+            return $stmt;
+        }
+
         function createOrder()
         {
             $query = 'INSERT INTO tbl_orders 

@@ -183,8 +183,8 @@
 	</div>
 	<div class="row" style="margin-left: 10px; margin-right: 10px; margin-top: 15px;" >
 		<div class="col-md-8" style="padding-right: 30px;">			
-			<button type="submit" class="btn bg-btn-hold btn-lg pull-right" style="margin-left: 10px;"><span style="font-size: 15px;"><strong>Hold Order</strong></span></button>
-			<button type="submit" class="btn bg-btn-cancel btn-lg pull-right"><span style="font-size: 15px;"><strong>Cancel Order</strong></span></button>
+			<!-- <button type="submit" class="btn bg-btn-hold btn-lg pull-right" style="margin-left: 10px;"><span style="font-size: 15px;"><strong>Hold Order</strong></span></button> -->
+			<a href='table.php' class="btn bg-btn-cancel btn-lg pull-right"><span style="font-size: 15px;"><strong>Cancel Order</strong></span></a>
 		</div>
 		<div class="col-md-4">
 			<button type="button" id="btn_pay" data-toggle="modal" data-target="#exampleModal" class="btn bg-green btn-lg" style="display:inline-block; width: 100%;"><span style="font-size: 15px;"><strong>Pay</strong></span></button>
@@ -575,8 +575,14 @@
 	function pay() {
 		// console.log(sub_total);
 		var idOrder = <?php echo $_maxid; ?>;
-		var jumlahBayar = document.getElementById('jumlah_bayar');
-		
+		var jumlahBayar = document.getElementById('jumlah_bayar').value;
+		// var kembali = jumlahBayar - sub_total;
+
+		var new_jumlah_bayar_ = jumlah_bayar_[jumlah_bayar_.length];
+		var jumlah_bayar_new_ = jumlah_bayar_.replace(new_jumlah_bayar_,"");
+		var kembali = jumlah_bayar_new_ - sub_total;
+
+
 
 		$.ajax({
 				type  	: "POST",
@@ -584,13 +590,47 @@
 				url		: "order/update_orders.php",
 				success: function (result) {
 					console.log(result);
-					window.location.href = 'table.php';					
+
+					link(idOrder,jumlah_bayar_new_,kembali);
+					
+					// setTimeout(function () {				
+					// 	window.location.href = 'table.php';
+					// }, 3000);
+							
+						
+										
 				}
-		});	
+		});
+
+
+
+		
+
+		// setInterval(function(){
+		// 				window.location.href = 'table.php';		
+		// 			}, 2000);
+		// window.location.href = 'table.php';	
+		// $.ajax({
+		// 		type  	: "POST",
+	    //   		data  	: "id_order="+idOrder+"&bayar="+jumlahBayar+"&kembali="+kembali,
+		// 		url		: "order/cetak_order.php",
+		// 		success: function (result) {
+		// 			console.log(result);
+					
+		// 		}
+		// });	
 
 		// jumlahBayar.value = 0;
 		
 		
+	}
+
+	// setInterval(pay(), 3000);
+	function link(idOrder,jumlah_bayar_new_,kembali) {
+		window.location.href = "order/cetak_order.php?id_order="+idOrder+"&bayar="+jumlah_bayar_new_+"&kembali="+kembali;
+		setTimeout(function () {				
+						window.location.href = 'table.php';
+					}, 3000);
 	}
 
 

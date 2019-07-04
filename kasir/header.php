@@ -50,22 +50,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css"> -->
     <style>
-    .cetakBody{
-    width: 100%;
-    margin: 10px;
-    }
-    .cetakBody > .cetak{
-    margin-left: 15px;
-    width: 550px;
+    .cetakBody {
+      width: 100%;
+      margin: 10px;
     }
 
-    .bootstrap-datetimepicker-widget 
-    {
-         color: #e74c3c;
+    .cetakBody>.cetak {
+      margin-left: 15px;
+      width: 550px;
+    }
+
+    .bootstrap-datetimepicker-widget {
+      color: #e74c3c;
+    }
+
+    .navbar-brand { 
+      color:white;
     }
 
     @media (max-width: @screen-xs-min) {
-    .modal-xs { width: @modal-sm; }
+      .modal-xs {
+        width: @modal-sm;
+      }
     }
     </style>
 

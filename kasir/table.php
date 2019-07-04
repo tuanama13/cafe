@@ -51,7 +51,7 @@
                     echo "
                         <div class='col-md-3' onclick='tableOrder(\"$i\")'>
                             <div class='panel panel-default'>
-                                <div class='panel-heading text-center' style='padding-top:5px;padding-bottom:5px;'><h2 style='margin:5px;'>".$i."</h2></div>
+                                <div class='panel-heading text-center' style='background-color:white;padding-top:5px;padding-bottom:5px;'><h2 style='margin:5px;'>".$i."</h2></div>
                                 <div class='panel-body text-center'>
                                     <img src='../dist/img/icon_table_front.png'  alt='table' style='width:100px; height:100px;'>
                                 </div>
@@ -69,7 +69,7 @@
         <!-- /col-8 -->
         <div class="col-md-4">
             <div class='panel panel-default'>
-                <div class="panel-heading">
+                <div class="panel-heading" style='background-color:white;'>
                     <div class="row">
                     <div class="col-md-8"><h4>Today Transaction</h4></div>
                     <div class="col-md-4"><h5><a href="transaksi.php">See all >></a></h5></div>
