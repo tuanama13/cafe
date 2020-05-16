@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 15, 2019 at 08:06 PM
+-- Generation Time: May 16, 2020 at 05:33 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -63,21 +63,55 @@ CREATE TABLE `tbl_detail_order` (
 --
 
 INSERT INTO `tbl_detail_order` (`id_detail_order`, `id_order`, `id_produk`, `jumlah_order`, `harga_produk`) VALUES
-(1, 1, 7, 1, 24000),
-(2, 1, 5, 1, 15500),
-(3, 1, 2, 2, 5000),
-(4, 2, 2, 1, 5000),
-(5, 3, 8, 1, 25000),
-(6, 4, 1, 1, 15000),
-(7, 5, 8, 1, 25000),
-(8, 6, 2, 2, 5000),
-(9, 6, 5, 1, 15500),
-(10, 6, 7, 1, 24000),
-(11, 7, 2, 4, 5000),
-(12, 7, 8, 1, 25000),
-(13, 7, 7, 1, 24000),
-(14, 7, 6, 3, 25500),
-(15, 7, 5, 1, 15500);
+(25, 1, 23, 1, 20000),
+(26, 1, 19, 1, 6000),
+(27, 15, 21, 1, 4000),
+(28, 16, 22, 1, 15000),
+(29, 17, 21, 1, 4000),
+(30, 18, 21, 1, 4000),
+(31, 19, 19, 1, 6000),
+(32, 19, 21, 1, 4000),
+(33, 20, 21, 1, 4000),
+(34, 21, 21, 1, 4000),
+(35, 22, 19, 1, 6000),
+(36, 23, 19, 1, 6000),
+(37, 23, 21, 1, 4500),
+(38, 23, 23, 1, 20000),
+(39, 23, 22, 1, 15000),
+(40, 23, 20, 1, 20000),
+(41, 24, 19, 2, 6000),
+(42, 24, 21, 1, 4500),
+(43, 25, 21, 1, 4500),
+(44, 26, 21, 1, 4500),
+(45, 27, 19, 1, 6000),
+(46, 28, 19, 1, 6000),
+(47, 29, 19, 1, 6000),
+(48, 30, 21, 1, 4500),
+(49, 31, 19, 1, 6000),
+(50, 32, 21, 1, 4500),
+(51, 33, 21, 1, 4500),
+(52, 34, 21, 1, 4500),
+(53, 35, 19, 1, 6000),
+(54, 36, 19, 1, 6000),
+(55, 37, 19, 1, 6000),
+(56, 38, 21, 1, 4500),
+(57, 39, 21, 1, 4500),
+(58, 40, 21, 1, 4500),
+(59, 41, 21, 1, 4500),
+(60, 42, 19, 1, 6000),
+(61, 43, 21, 1, 4500),
+(62, 44, 19, 1, 6000),
+(63, 45, 19, 1, 6000),
+(64, 46, 21, 1, 4500),
+(65, 47, 19, 1, 6000),
+(66, 48, 19, 1, 6000),
+(67, 49, 19, 1, 6000),
+(68, 50, 21, 1, 4500),
+(69, 51, 21, 1, 4500),
+(70, 52, 19, 1, 6000),
+(71, 53, 19, 1, 6000),
+(72, 54, 21, 1, 4500),
+(73, 55, 19, 1, 6000);
 
 -- --------------------------------------------------------
 
@@ -142,13 +176,48 @@ CREATE TABLE `tbl_orders` (
 --
 
 INSERT INTO `tbl_orders` (`id_order`, `no_meja`, `id_cabang`, `id_user`, `tgl_order`, `grandtotal`, `logs`) VALUES
-(1, 2, 1, 1, '2019-06-11 12:48:49', 49500, 1),
-(2, 6, 1, 1, '2019-06-11 12:50:36', 5000, 1),
-(3, 3, 1, 1, '2019-06-11 13:08:08', 25000, 1),
-(4, 8, 1, 1, '2019-06-11 13:10:01', 15000, 1),
-(5, 3, 1, 1, '2019-06-14 13:35:11', 25000, 1),
-(6, 5, 1, 1, '2019-06-14 13:43:56', 49500, 1),
-(7, 7, 1, 1, '2019-06-14 16:03:01', 161000, 1);
+(14, 1, 1, 1, '2019-06-28 09:51:01', 0, 1),
+(15, 4, 1, 1, '2019-06-28 09:51:27', 4000, 1),
+(16, 4, 1, 1, '2019-06-28 09:51:39', 15000, 1),
+(17, 8, 1, 1, '2019-06-30 22:12:26', 0, 1),
+(18, 8, 1, 1, '2019-06-30 22:13:01', 0, 1),
+(19, 8, 1, 1, '2019-06-30 22:18:16', 0, 1),
+(20, 8, 1, 1, '2019-06-30 22:21:19', 0, 1),
+(21, 8, 1, 1, '2019-06-30 22:22:16', 0, 1),
+(22, 5, 1, 1, '2019-06-30 22:50:55', 0, 1),
+(23, 6, 1, 1, '2019-07-04 10:49:18', 65500, 1),
+(24, 8, 1, 1, '2019-07-04 11:30:06', 16500, 1),
+(25, 4, 1, 1, '2019-07-04 12:15:36', 0, 1),
+(26, 4, 1, 1, '2019-07-04 12:27:02', 4500, 1),
+(27, 4, 1, 1, '2019-07-04 12:27:28', 6000, 1),
+(28, 6, 1, 1, '2019-07-04 12:30:06', 6000, 1),
+(29, 6, 1, 1, '2019-07-04 12:31:07', 6000, 1),
+(30, 8, 1, 1, '2019-07-04 12:31:58', 4500, 1),
+(31, 8, 1, 1, '2019-07-04 12:33:03', 6000, 1),
+(32, 8, 1, 1, '2019-07-04 12:34:24', 4500, 1),
+(33, 8, 1, 1, '2019-07-04 12:34:47', 4500, 1),
+(34, 8, 1, 1, '2019-07-04 12:40:57', 0, 1),
+(35, 2, 1, 1, '2019-07-04 12:42:30', 6000, 1),
+(36, 2, 1, 1, '2019-07-04 12:43:03', 6000, 1),
+(37, 2, 1, 1, '2019-07-04 12:44:46', 6000, 1),
+(38, 2, 1, 1, '2019-07-04 12:45:41', 4500, 1),
+(39, 7, 1, 1, '2019-07-04 12:46:18', 4500, 1),
+(40, 2, 1, 1, '2019-07-04 12:47:37', 4500, 1),
+(41, 7, 1, 1, '2019-07-04 12:53:02', 4500, 1),
+(42, 7, 1, 1, '2019-07-04 12:54:38', 6000, 1),
+(43, 7, 1, 1, '2019-07-04 12:56:26', 4500, 1),
+(44, 7, 1, 1, '2019-07-04 12:58:02', 6000, 1),
+(45, 7, 1, 1, '2019-07-04 12:59:47', 6000, 1),
+(46, 7, 1, 1, '2019-07-04 13:00:16', 4500, 1),
+(47, 7, 1, 1, '2019-07-04 20:34:14', 0, 1),
+(48, 4, 1, 1, '2019-07-04 20:37:03', 6000, 1),
+(49, 1, 1, 1, '2019-07-04 20:37:29', 6000, 1),
+(50, 1, 1, 1, '2019-07-04 20:42:10', 4500, 1),
+(51, 1, 1, 1, '2019-07-04 20:46:23', 4500, 1),
+(52, 10, 1, 1, '2019-07-04 20:47:10', 6000, 1),
+(53, 6, 1, 1, '2019-07-04 20:48:22', 6000, 1),
+(54, 1, 1, 1, '2019-11-10 16:48:56', 4500, 1),
+(55, 1, 1, 1, '2020-05-16 10:32:38', 6000, 1);
 
 -- --------------------------------------------------------
 
@@ -170,9 +239,12 @@ CREATE TABLE `tbl_pegawai` (
 --
 
 INSERT INTO `tbl_pegawai` (`id_pegawai`, `nama_pegawai`, `alamat_pegawai`, `kontak_pegawai`, `posisi_pegawai`, `logs`) VALUES
-(1, 'Iron Man', 'Jl. Avengers', '080000000000', 'Admin', 1),
+(1, 'Iron Man', 'Jl. Avengers', '080000000000', 'Kasir', 1),
 (2, 'Black Widow', 'Jl. Avengers', '081111111111', 'Kasir', 1),
-(3, 'Nick Fury', 'Jl. Avengers', '082222222222', 'Pimpinan', 1);
+(3, 'Nick Fury', 'Jl. Avengers', '082222222222', 'Pimpinan', 1),
+(5, 'Demi Levato', 'Pontianak', '089878675890', 'Admin', 1),
+(6, 'Admin', 'Admin', '08000000000', 'Admin', 1),
+(7, 'Kasir', 'kasir', '081111111111', 'Kasir', 1);
 
 -- --------------------------------------------------------
 
@@ -205,7 +277,7 @@ INSERT INTO `tbl_pengeluaran` (`id_pengeluaran`, `id_user`, `tgl_pengeluaran`, `
 
 CREATE TABLE `tbl_produk` (
   `id_produk` int(11) NOT NULL,
-  `id_kat` int(11) NOT NULL,
+  `id_kat` int(2) NOT NULL,
   `nama_produk` varchar(50) NOT NULL,
   `desc_produk` text NOT NULL,
   `image_produk` text NOT NULL,
@@ -219,12 +291,11 @@ CREATE TABLE `tbl_produk` (
 --
 
 INSERT INTO `tbl_produk` (`id_produk`, `id_kat`, `nama_produk`, `desc_produk`, `image_produk`, `harga_produk`, `status_produk`, `logs`) VALUES
-(1, 1, 'Mac and Cheese', 'This diagram shows Address Types, which are an example of Reference Data.\r\nThis kind of data has the following characteristics :-\r\n\r\n    it doesn\'t change very much\r\n    it has a relatively small number of values, usually less than a few dozen and never more than a few hundred.\r\n    Therefore we can show it with a Code as a Primary Key.\r\n    Data in Reference Data Tables can be used to populate drop-down lists for Users to select from.\r\n    In this way, it is used to ensure that all new data is valid. \r\n\r\n', '/image/1/1.jpg', 15000, 1, 1),
-(2, 2, 'Ice Tea', 'This diagram shows Address Types, which are an example of Reference Data.\r\nThis kind of data has the following characteristics :-\r\n\r\n    it doesn\'t change very much\r\n    it has a relatively small number of values, usually less than a few dozen and never more than a few hundred.\r\n    Therefore we can show it with a Code as a Primary Key.\r\n    Data in Reference Data Tables can be used to populate drop-down lists for Users to select from.\r\n    In this way, it is used to ensure that all new data is valid. \r\n\r\n', '/image/2/1.jpg', 5000, 1, 1),
-(5, 1, 'Indomie Gokil', 'Semangkuk Indomie-nya hadir dengan daging kikil dan sambal cabe hijau-nya. Sensasi rasa kenyal pada kikil-nya, serta Indomie-nya yang gurih dan pedas memang nagih banget. Mantap! ', '/image/1/2.jpg', 15500, 1, 1),
-(6, 1, 'Nasi Wagyu Slice Saus Mushroom', 'Yang satu ini juga nggak boleh ketinggalan buat kamu cicipi. Ngelihat fotonya saja sudah bisa bikin ngiler. Nasi putih hangat dengan irisan daging wagyu dengan saus mushroom-nya yang gurih, creamy, dan manis juara banget memang rasanya. Nggak ketinggalan telur mata sapinya. Hmmm, siap-siap di bikin jatuh cinta ya sama kelezatannya! ', '/image/1/3.jpg', 25500, 1, 1),
-(7, 1, 'Cireng Pandawa', 'Tekstur garing dan crunchy pada bagian luarnya, serta dalamnya yang kenyal dan rasanya yang gurih memang nggak bakalan bisa di tolak. Apalagi kalau dicocol dengan sambalnya yang pedas manis', '/image/1/4.jpg', 24000, 1, 1),
-(8, 2, 'Caffe Latte', 'Menu minuman yang nggak boleh ketinggalan ketika nongkrong, yaa kopi.', '/image/2/2.jpg', 25000, 1, 1);
+(19, 2, 'Kopi Saring', 'Kopi Enak dengan Biji Kopi pilihan', '/image/1/201906281561688872.jpeg', 6000, 1, 1),
+(20, 1, 'Fried Chicken', 'None', '/image/1/201906281561688947.jpeg', 20000, 1, 1),
+(21, 2, 'Es Teh', 'None', '/image/2/201906281561689129.jpeg', 4500, 1, 1),
+(22, 1, 'Nasi Telor asin', 'None', '/image/1/201906281561689219.jpeg', 15000, 1, 1),
+(23, 1, 'Nasi Wagyu', 'none', '/image/1/201906281561689265.jpeg', 20000, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -237,7 +308,7 @@ CREATE TABLE `tbl_user` (
   `id_pegawai` int(11) NOT NULL,
   `username_user` varchar(50) NOT NULL,
   `password_user` varchar(50) NOT NULL,
-  `role_user` int(2) NOT NULL,
+  `role_user` varchar(10) NOT NULL,
   `logs` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -246,9 +317,12 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `id_pegawai`, `username_user`, `password_user`, `role_user`, `logs`) VALUES
-(1, 1, 'ironkece', 'ambrosius13', 1, 1),
-(2, 2, 'cutewidow', 'ambrosius13', 2, 1),
-(3, 3, 'furyeye', 'ambrosius13', 3, 1);
+(1, 1, 'ironkece', 'ambrosius13', 'Admin', 1),
+(2, 2, 'cutewidow', 'ambrosius13', 'Kasir', 1),
+(3, 3, 'furyeye', 'ambrosius13', 'Pimpinan', 1),
+(4, 5, 'demiapa', '123456', 'Admin', 1),
+(5, 6, 'admin', 'admin', 'Admin', 1),
+(6, 7, 'kasir', 'kasir', 'Kasir', 1);
 
 --
 -- Indexes for dumped tables
@@ -322,7 +396,7 @@ ALTER TABLE `tbl_cabang`
 -- AUTO_INCREMENT for table `tbl_detail_order`
 --
 ALTER TABLE `tbl_detail_order`
-  MODIFY `id_detail_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_detail_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT for table `tbl_kategori`
@@ -340,13 +414,13 @@ ALTER TABLE `tbl_logs`
 -- AUTO_INCREMENT for table `tbl_orders`
 --
 ALTER TABLE `tbl_orders`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `tbl_pegawai`
 --
 ALTER TABLE `tbl_pegawai`
-  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbl_pengeluaran`
@@ -358,13 +432,13 @@ ALTER TABLE `tbl_pengeluaran`
 -- AUTO_INCREMENT for table `tbl_produk`
 --
 ALTER TABLE `tbl_produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
